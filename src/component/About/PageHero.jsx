@@ -6,12 +6,14 @@ const PageHero = ({
   subtitle,
   backgroundImage,
   height = "330px",
+  buttonText,
+  buttonLink,
 }) => {
   return (
     <section
       style={{
         width: "100%",
-        height: height,
+        height,
         position: "relative",
         overflow: "hidden",
         fontFamily: "'Poppins', sans-serif",
@@ -29,12 +31,12 @@ const PageHero = ({
         }}
       />
 
-      {/* Overlay */}
+      {/* Dark Overlay */}
       <div
         style={{
           position: "absolute",
           inset: 0,
-         
+          background: "rgba(0, 0, 0, 0.55)",
         }}
       />
 
@@ -46,38 +48,47 @@ const PageHero = ({
           zIndex: 2,
         }}
       >
-        <div
-          className="d-flex flex-column justify-content-center align-items-center text-center h-100"
-        >
+        <div className="d-flex flex-column justify-content-center align-items-center text-center h-100">
           <h1
             style={{
               color: "#ffffff",
               fontWeight: "600",
-              fontSize: "clamp(40px, 5vw, 64px)",
-              marginBottom: "14px",
+              fontSize: "clamp(34px, 4vw, 54px)",
+              marginBottom: "12px",
             }}
           >
             {title}{" "}
-            <span
-              style={{
-                color: "#ff7a1a",
-              }}
-            >
-              {highlight}
-            </span>
+            <span style={{ color: "#ff7a1a" }}>{highlight}</span>
           </h1>
 
           <p
             style={{
               color: "#ffffff",
-              fontSize: "clamp(16px, 2vw, 22px)",
+              fontSize: "clamp(14px, 1.6vw, 18px)",
               fontWeight: "400",
-              marginBottom: 0,
-              maxWidth: "900px",
+              marginBottom: buttonText ? "18px" : 0,
+              maxWidth: "800px",
             }}
           >
             {subtitle}
           </p>
+
+          {buttonText && (
+            <a
+              href={buttonLink || "#"}
+              style={{
+                background: "#ff7a1a",
+                color: "#ffffff",
+                padding: "10px 24px",
+                borderRadius: "6px",
+                textDecoration: "none",
+                fontSize: "14px",
+                fontWeight: "500",
+              }}
+            >
+              {buttonText}
+            </a>
+          )}
         </div>
       </div>
     </section>

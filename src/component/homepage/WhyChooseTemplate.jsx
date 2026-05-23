@@ -2,16 +2,18 @@ import React from "react";
 import whyBg from "../../assets/homepage/why-bg.jpg";
 import whyImage from "../../assets/homepage/expert.png";
 
-const points = [
-  "Industry-relevant training programs",
-  "100% placement assistance",
-  "Expert trainers",
-  "Interview preparation support",
-  "Global education consultancy",
-  "Personalized career guidance",
-];
-
-const WhyChoose = () => {
+const WhyChooseTemplate = ({
+  bgImage,
+  mainImage,
+  tag = "Why Choose us",
+  beforeText,
+  orangeText,
+  orangeText2,
+  afterText,
+  description,
+  points = [],
+  imageAlt = "Why Choose Us",
+}) => {
   return (
     <section
       style={{
@@ -24,7 +26,7 @@ const WhyChoose = () => {
       <div
         className="container-fluid"
         style={{
-          backgroundImage: `url(${whyBg})`,
+          backgroundImage: `url(${bgImage})`,
           backgroundSize: "100% 100%",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -32,18 +34,12 @@ const WhyChoose = () => {
           padding: "55px 40px",
         }}
       >
-       <div
-  className="row align-items-center"
-  style={{
-    columnGap: "10px",
-  }}
->
-          <div className="col-12 col-lg-5 ms-5">
+        <div className="row align-items-center">
+          <div className="col-12 col-lg-5 ms-lg-5">
             <span
               style={{
                 display: "inline-block",
                 fontSize: "12px",
-                fontWeight: "400",
                 color: "#111",
                 borderBottom: "1px solid #ff7a1a",
                 borderRadius: "0 0 12px 12px",
@@ -51,46 +47,38 @@ const WhyChoose = () => {
                 marginBottom: "16px",
               }}
             >
-              Why Choose us
+              {tag}
             </span>
 
-            <h2
-              style={{
-                fontSize: "28px",
-                fontWeight: "600",
-                lineHeight: "1.35",
-                color: "#222",
-                marginBottom: "16px",
-              }}
-            >
-              We Are Expert &{" "}
-              <span style={{ color: "#ff7a1a" }}>Do Our</span>
-              <br />
-              <span style={{ color: "#ff7a1a" }}>Best</span> For Your Goal
-            </h2>
+           <h2
+  style={{
+    fontSize: "28px",
+    fontWeight: "600",
+    lineHeight: "1.35",
+    color: "#222",
+    marginBottom: "16px",
+  }}
+>
+  {beforeText}{" "}
+  <span style={{ color: "#ff7a1a" }}>{orangeText}</span>
+  <br />
+  <span style={{ color: "#ff7a1a" }}>{orangeText2}</span>{" "}
+  {afterText}
+</h2>
 
             <p
               style={{
                 fontSize: "15px",
-                fontWeight: "400",
                 lineHeight: "1.55",
                 color: "#333",
                 maxWidth: "430px",
                 marginBottom: "18px",
               }}
             >
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when many desktop and web page
-              editors looking at its layout.
+              {description}
             </p>
 
-            <ul
-              style={{
-                listStyle: "none",
-                padding: 0,
-                margin: 0,
-              }}
-            >
+            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
               {points.map((point, index) => (
                 <li
                   key={index}
@@ -125,17 +113,16 @@ const WhyChoose = () => {
             </ul>
           </div>
 
-          <div className="col-12 col-lg-5 text-center">
+          <div className="col-12 col-lg-5 text-center mt-4 mt-lg-0">
             <img
-              src={whyImage}
-              alt="Why Choose Us"
-               style={{
-    width: "100%",
-    maxWidth: "470px",
-    height: "auto",
-    objectFit: "contain",
-    marginLeft: "-20px", // moves image left
-  }}
+              src={mainImage}
+              alt={imageAlt}
+              style={{
+                width: "100%",
+                maxWidth: "470px",
+                height: "auto",
+                objectFit: "contain",
+              }}
             />
           </div>
         </div>
@@ -144,4 +131,4 @@ const WhyChoose = () => {
   );
 };
 
-export default WhyChoose;
+export default WhyChooseTemplate;
