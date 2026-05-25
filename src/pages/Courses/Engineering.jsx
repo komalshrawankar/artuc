@@ -11,8 +11,8 @@ import BenefitsSection from "../../component/Courses/BenefitsSection";
 
 
 
-import heroImage from "../../assets/images/health-science.png";
-import programImage from "../../assets/images/program.png";
+import heroImage from "../../assets/courses/engineering-bg.png";
+import programImage from "../../assets/courses/engineering-p.png";
 import c1 from "../../assets/images/c1.png";
 import c2 from "../../assets/images/c2.png";
 import c3 from "../../assets/images/c3.png";
@@ -150,8 +150,8 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Build a Career in Healthcare & Medical Sciences"
-  description="Start your journey in the healthcare industry with our Allied Health and Science courses designed to provide practical knowledge, professional training, and strong career opportunities."
+  title="Study Engineering Abroad and Build a Global Career"
+  description="Explore world-class engineering programs at top international universities and gain the knowledge, skills, and global exposure needed to succeed in the modern technology-driven world."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
@@ -161,16 +161,16 @@ const AlliedHealthandScience = () => {
   title="About the"
   highlight="Program"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Engineering is one of the most sought-after fields for students planning to study abroad. International universities offer advanced engineering programs that combine theoretical knowledge with practical innovation and research opportunities.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "By studying engineering abroad, students gain access to modern laboratories, cutting-edge technologies, and global career opportunities across industries such as technology, manufacturing, construction, and research."
   ]}
 />
 
 <CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  title="Popular Engineering"
+  highlight=" Fields"
+  subtitle="Students can choose from a wide range of engineering specializations, including:"
   courses={offeredCourses}
 />;
 
@@ -184,7 +184,7 @@ const AlliedHealthandScience = () => {
 <CareerOpportunities
   title="Career"
   highlight="Opportunities"
-  description="Graduates of Allied Health and Science programs can pursue careers in various healthcare sectors. These roles play a vital part in supporting doctors and healthcare professionals in patient care and medical services."
+  description="Engineering graduates from international universities can pursue careers in industries such as:"
   opportunities={opportunitiesList}
   enrollTitle="Who Should"
   enrollHighlight="Enroll?"

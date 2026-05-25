@@ -23,6 +23,29 @@ import Law from "./pages/Courses/Law";
 import Medicine from "./pages/Courses/Medicine";
 
 
+
+
+
+import AdmissionService from "./pages/Admission/AdmissionService";
+import Career from "./pages/Admission/career"
+import Courses from "./pages/Admission/courses"
+import Education from "./pages/Admission/education"
+import Endtoend from "./pages/Admission/endtoend"
+import Forex from "./pages/Admission/forex"
+import International from "./pages/Admission/international"
+import Interview from "./pages/Admission/interview"
+import Letter from "./pages/Admission/letter"
+import Scholarship from "./pages/Admission/scholarship"
+import Student from "./pages/Admission/student"
+import Test from "./pages/Admission/test"
+import Travel from "./pages/Admission/travel"
+import Visa from "./pages/Admission/visa"
+
+
+
+
+
+
 function App() {
   return (
     <>
@@ -37,7 +60,7 @@ function App() {
         <Route path="/courses/ielts" element={< IELTS />} />
         <Route path="/courses/sat" element={<SAT />} />
         <Route path="/courses/toefl" element={<TOEFL />} />
-     
+
         <Route path="/courses" element={<CourseDetails />} />
         <Route path="/courses/:slug" element={<CourseDetails />} />
         <Route path="/courses/allied-health-and-science" element={<Allied />} />
@@ -49,8 +72,27 @@ function App() {
         <Route path="/courses/arts-humanities-and-social-sciences" element={<Art />} />
         <Route path="/courses/food-hospitality-and-personal-services" element={<Food />} />
         <Route path="/courses/information-technology" element={<Information />} />
-        <Route path="/courses/law" element={<Law/>} />
+        <Route path="/courses/law" element={<Law />} />
 
+
+
+        <Route
+          path="/courses/admission-services/:slug"
+          element={<AdmissionService />}
+        />
+<Route path="/courses/admission-services/student-accommodation-support" element={<Career/>} />
+<Route path="/courses/admission-services/scholarship-application-assistance" element={<Scholarship />} />
+<Route path="/courses/admission-services/international-student-insurance" element={<International />} />
+<Route path="/courses/admission-services/course-and-university-selection" element={<Courses />} />
+<Route path="/courses/admission-services/end-to-end-applications" element={<Endtoend />} />
+<Route path="/courses/admission-services/interview-preparation" element={<Interview />} />
+<Route path="/courses/admission-services/letter-of-recommendation" element={<Letter />} />
+<Route path="/courses/admission-services/visa-application-support" element={<Visa />} />
+<Route path="/courses/admission-services/education-loan-assistance" element={<Education />} />
+<Route path="/courses/admission-services/forex-assistance" element={<Forex />} />
+<Route path="/courses/admission-services/test-preparations" element={<Test />} />
+<Route path="/courses/admission-services/career-counseling" element={<Career />} />
+<Route path="/courses/admission-services/travel-assistance" element={<Travel/>} />
 
       </Routes>
 

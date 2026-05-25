@@ -28,11 +28,11 @@ import o11 from "../../assets/images/o11.png";
 import o22 from "../../assets/images/o22.png";
 import o33 from "../../assets/images/o33.png";
 import o44 from "../../assets/images/o44.png";
-import u1 from "../../assets/images/u1.png";
-import u2 from "../../assets/images/u2.png";
-import u3 from "../../assets/images/u3.png";
-import u4 from "../../assets/images/u4.png";
-import u5 from "../../assets/images/u5.png";
+import u1 from "../../assets/courses/US.PNG";
+import u2 from "../../assets/courses/UK.PNG";
+import u3 from "../../assets/courses/canada.png";
+import u4 from "../../assets/courses/australia.png";
+import u5 from "../../assets/courses/germany.png";
 import u6 from "../../assets/images/u6.png";
 import u7 from "../../assets/images/u7.png";
 import u8 from "../../assets/images/u8.png";
@@ -48,54 +48,54 @@ import blueBg from "../../assets/homepage/blue-bg.png";
 
 
 const opportunitiesList = [
-  { icon: o1, title: "Hospitals and Clinics" },
-  { icon: o2, title: "Diagnostic Laboratories" },
-  { icon: o3, title: "Medical Research Centers" },
-  { icon: o4, title: "Rehabilitation Centers" },
-  { icon: o5, title: "Medical Equipment Companies" },
+  { icon: o1, title: "Architectural Firms" },
+  { icon: o2, title: "Construction Companies" },
+  { icon: o3, title: "Urban Planning Departments" },
+  { icon: o4, title: "Real Estate Development" },
+  { icon: o5, title: "Interior and Structural Design Firms" },
 ];
 const enrollList = [
-  { icon: o11, title: "Students interested in healthcare and medical fields" },
-  { icon: o22, title: "Individuals seeking stable careers in the healthcare industry" },
-  { icon: o33, title: "Students who want practical medical training" },
-  { icon: o44, title: "Candidates looking for job-oriented professional courses" },
+  { icon: o11, title: "Students interested in architecture and building design" },
+  { icon: o22, title: "Individuals who enjoy creative and technical work" },
+  { icon: o33, title: "Students planning a career in construction or infrastructure development" },
+  { icon: o44, title: "Candidates looking for practical and career-oriented courses" },
 ];
 const offeredCourses = [
   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
+    title: "Architectural Design",
     description:
-      "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
+      "Learn the principles of creative and functional building design, focusing on space planning, aesthetics, and modern architectural concepts.",
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
+    title: "Building Construction Technology",
     description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+      "Understand construction methods, materials, and techniques used to build safe, durable, and efficient structures.",
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
+    title: "Structural Design Fundamentals",
     description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+      "Gain knowledge of structural systems, load distribution, and basic engineering principles that ensure building stability and strength.",
   },
   {
     icon: c4,
-    title: "Dialysis Technology",
+    title: "Construction Project Management",
     description:
-      "Specialized training in operating dialysis machines and providing vital care for patients with kidney disorders.",
+      "Develop skills to plan, manage, and supervise construction projects, ensuring timely completion and quality control.",
   },
   {
     icon: c5,
-    title: "Hospital Administration",
+    title: "Building Planning and Drafting",
     description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
+      "Learn how to create detailed building plans, layouts, and technical drawings using modern drafting tools and software.",
   },
   {
     icon: c6,
-    title: "Healthcare Assistant Programs",
+    title: "Sustainable Architecture",
     description:
-      "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
+      "Explore eco-friendly design practices that focus on energy efficiency, environmental responsibility, and sustainable building solutions.",
   },
 ];
 const highlightsList = [
@@ -107,11 +107,11 @@ const highlightsList = [
   "Career guidance and job support",
 ];
 const universitiesList = [
-  { image: u1, name: "St. Lawrence College" },
-  { image: u2, name: "Northern College" },
-  { image: u3, name: "De Anza College" },
-  { image: u4, name: "San Mateo Colleges" },
-  { image: u5, name: "Sacred Heart University" },
+  { image: u1, name: "United States " },
+  { image: u2, name: "United Kingdom" },
+  { image: u3, name: "Canada" },
+  { image: u4, name: "Australia" },
+  { image: u5, name: "Germany" },
   { image: u6, name: "Louisiana State University" },
   { image: u7, name: "Northern Alberta Institute" },
   { image: u8, name: "North Seattle College" },
@@ -120,15 +120,15 @@ const universitiesList = [
 const benefitsList = [
   {
     icon: b1,
-    title: "High Demand in Healthcare Industry",
+    title: "Creative and Technical Career",
     description:
-      "The healthcare sector continues to grow rapidly, creating strong, persistent demand for trained allied health professionals globally.",
+      "Architecture combines creativity with technical knowledge to design innovative and functional spaces.",
   },
   {
     icon: b2,
-    title: "Practical Skill Development",
+    title: "Hands-On Learning Experience",
     description:
-      "Students gain hands-on training and real-world experience through comprehensive practical sessions and internships.",
+      "Students gain practical experience through projects, design exercises, and real-world case studies.",
   },
   {
     icon: b3,
@@ -138,9 +138,9 @@ const benefitsList = [
   },
   {
     icon: b4,
-    title: "Opportunities in India and Abroad",
+    title: "Global Career Opportunities",
     description:
-      "Qualified healthcare professionals have exceptional opportunities to work, migrate, and establish careers in various countries around the world.",
+      "Architecture and construction skills are valued worldwide, offering opportunities to work on international projects.",
   },
 ];
 
@@ -150,8 +150,8 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Build a Career in Healthcare & Medical Sciences"
-  description="Start your journey in the healthcare industry with our Allied Health and Science courses designed to provide practical knowledge, professional training, and strong career opportunities."
+  title="Design the Future with Architecture & Building Courses"
+  description="Build a successful career in architecture, construction, and building design with industry-focused training that combines creativity, technical knowledge, and practical skills."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
@@ -161,16 +161,16 @@ const AlliedHealthandScience = () => {
   title="About the"
   highlight="Program"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Architecture and Building courses focus on the planning, design, and construction of buildings and infrastructure. These programs help students develop the technical knowledge and creative skills needed to design functional, sustainable, and visually appealing structures.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Through a combination of theoretical learning and practical training, students gain a strong foundation in architectural design, building materials, construction techniques, and project management."
   ]}
 />
 
 <CoursesOffered
   title="Courses"
   highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  subtitle="Our Architecture and Building programs provide specialized training in areas such as:"
   courses={offeredCourses}
 />;
 
@@ -184,7 +184,7 @@ const AlliedHealthandScience = () => {
 <CareerOpportunities
   title="Career"
   highlight="Opportunities"
-  description="Graduates of Allied Health and Science programs can pursue careers in various healthcare sectors. These roles play a vital part in supporting doctors and healthcare professionals in patient care and medical services."
+  description="After completing Architecture and Building courses, students can explore careers in various sectors, including:"
   opportunities={opportunitiesList}
   enrollTitle="Who Should"
   enrollHighlight="Enroll?"
@@ -193,16 +193,16 @@ const AlliedHealthandScience = () => {
 />
 
 <TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
+  title="Top Universities for Architecture and "
+  highlight="Building Studies"
+  subtitle="Here are five destinations where studying architecture offers an inspiring and globally recognized experience:"
   universities={universitiesList}
 />
 
 <BenefitsSection
-  title="Benefits of Allied Health"
-  highlight="Courses"
-  subtitle="A career in allied health offers stability, growth, and the opportunity to make a real difference."
+  title="Benefits of Studying "
+  highlight="Architecture & Building"
+  subtitle="A career in Architecture & Buildingoffers stability, growth, and the opportunity to make a real difference."
   benefits={benefitsList}
 />
 

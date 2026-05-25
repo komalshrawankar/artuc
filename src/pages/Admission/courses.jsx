@@ -7,12 +7,17 @@ import CourseHighlights from "../../component/Courses/CourseHighlights";
 import CareerOpportunities from "../../component/Courses/CareerOpportunities";
 import TopUniversities from "../../component/Courses/TopUniversities";
 import BenefitsSection from "../../component/Courses/BenefitsSection";
+import InfoSection from "../../component/admission/InfoSection";
+import BenefitCards from "../../component/admission/BenefitCards";
 
 
-
-
-import heroImage from "../../assets/courses/med-bg.png";
-import programImage from "../../assets/courses/med-p.png";
+import school from "../../assets/admission/smile.png";
+import abroad from "../../assets/admission/plane.png";
+import graduate from "../../assets/admission/3.png";
+import work from "../../assets/admission/work.png";
+import img from "../../assets/admission/info-img.png";
+import heroImage from "../../assets/admission/courses-bg.png";
+import programImage from "../../assets/admission/courses-p.png";
 import c1 from "../../assets/images/c1.png";
 import c2 from "../../assets/images/c2.png";
 import c3 from "../../assets/images/c3.png";
@@ -150,8 +155,8 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Build a Career in Healthcare & Medical Sciences"
-  description="Start your journey in the healthcare industry with our Allied Health and Science courses designed to provide practical knowledge, professional training, and strong career opportunities."
+  title="Choose the Right Course & University for Your Future"
+  description="Get expert guidance to select the best course and university that matches your interests, academic background, and career goals."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
@@ -174,23 +179,46 @@ const AlliedHealthandScience = () => {
   courses={offeredCourses}
 />;
 
-<CourseHighlights
-  title="Course"
-  highlight="Highlights"
-  subtitle="Experience a comprehensive curriculum designed to build practical skills."
-  highlights={highlightsList}
+
+<InfoSection
+  title="Why Career"
+  highlight="Counseling Matters"
+  description="Navigating today’s professional landscape can be overwhelming."
+  image={img}
+  points={[
+    "Avoid confusion and decision paralysis.",
+    "Align interests with professional skills.",
+    "Maximize long-term success.",
+    "Save time and financial resources.",
+  ]}
 />
 
-<CareerOpportunities
-  title="Career"
-  highlight="Opportunities"
-  description="Graduates of Allied Health and Science programs can pursue careers in various healthcare sectors. These roles play a vital part in supporting doctors and healthcare professionals in patient care and medical services."
-  opportunities={opportunitiesList}
-  enrollTitle="Who Should"
-  enrollHighlight="Enroll?"
-  enrollSubtitle="This program is ideal for:"
-  enrollList={enrollList}
+<BenefitCards
+  title="Who Can"
+  highlight="Benefit"
+  items={[
+    {
+      image: school,
+      title: "High School Students",
+    },
+    {
+      image: abroad,
+      title: "Students Planning Abroad",
+    },
+    {
+      image: graduate,
+      title: "Graduates",
+    },
+    {
+      image: work,
+      title: "Working Professionals",
+    },
+  ]}
 />
+
+
+
+
 
 <TopUniversities
   title="Top Universities Offering Allied Health"
@@ -199,12 +227,7 @@ const AlliedHealthandScience = () => {
   universities={universitiesList}
 />
 
-<BenefitsSection
-  title="Benefits of Allied Health"
-  highlight="Courses"
-  subtitle="A career in allied health offers stability, growth, and the opportunity to make a real difference."
-  benefits={benefitsList}
-/>
+
 
 <Testimonials/>
 <CTASection

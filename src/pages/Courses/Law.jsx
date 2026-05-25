@@ -11,8 +11,8 @@ import BenefitsSection from "../../component/Courses/BenefitsSection";
 
 
 
-import heroImage from "../../assets/images/health-science.png";
-import programImage from "../../assets/images/program.png";
+import heroImage from "../../assets/courses/law-bg.png";
+import programImage from "../../assets/courses/law-p.png";
 import c1 from "../../assets/images/c1.png";
 import c2 from "../../assets/images/c2.png";
 import c3 from "../../assets/images/c3.png";

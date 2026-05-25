@@ -11,8 +11,8 @@ import BenefitsSection from "../../component/Courses/BenefitsSection";
 
 
 
-import heroImage from "../../assets/images/health-science.png";
-import programImage from "../../assets/images/program.png";
+import heroImage from "../../assets/courses/business-bg.png";
+import programImage from "../../assets/courses/buisness-p.png";
 import c1 from "../../assets/images/c1.png";
 import c2 from "../../assets/images/c2.png";
 import c3 from "../../assets/images/c3.png";
@@ -48,87 +48,78 @@ import blueBg from "../../assets/homepage/blue-bg.png";
 
 
 const opportunitiesList = [
-  { icon: o1, title: "Hospitals and Clinics" },
-  { icon: o2, title: "Diagnostic Laboratories" },
-  { icon: o3, title: "Medical Research Centers" },
-  { icon: o4, title: "Rehabilitation Centers" },
-  { icon: o5, title: "Medical Equipment Companies" },
+  { icon: o1, title: "Business Manager" },
+  { icon: o2, title: "Marketing Executive" },
+  { icon: o3, title: "Financial Analyst" },
+  { icon: o4, title: "Human Resource Manager" },
+  { icon: o5, title: "Entrepreneur / Business Owner" },
 ];
 const enrollList = [
-  { icon: o11, title: "Students interested in healthcare and medical fields" },
-  { icon: o22, title: "Individuals seeking stable careers in the healthcare industry" },
-  { icon: o33, title: "Students who want practical medical training" },
-  { icon: o44, title: "Candidates looking for job-oriented professional courses" },
+  { icon: o11, title: "Students interested in business and management careers" },
+  { icon: o22, title: "Individuals who want to develop leadership and decision-making skills" },
+  { icon: o33, title: "Students planning to work in corporate or entrepreneurial roles" },
+  { icon: o44, title: "Candidates seeking practical business knowledge and career growth" },
 ];
 const offeredCourses = [
   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
+    title: "Education and Teaching",
     description:
-      "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
+      "Learn teaching methods, classroom management, and curriculum planning.",
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
+    title: "Media and Journalism",
     description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+      "Develop skills in news reporting, media writing, and digital communication.",
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
+    title: "Public Administration",
     description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+      "Understand government systems and public service management.",
   },
   {
     icon: c4,
-    title: "Dialysis Technology",
+    title: "Social Work and Community Development",
     description:
-      "Specialized training in operating dialysis machines and providing vital care for patients with kidney disorders.",
+      "Support communities and address social issues through development programs.",
   },
   {
     icon: c5,
-    title: "Hospital Administration",
+    title: "Research and Policy Analysis",
     description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
+      "Analyze data and develop policies for better decision-making.",
   },
   {
     icon: c6,
-    title: "Healthcare Assistant Programs",
+    title: "Corporate Communication and HR",
     description:
-      "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
+      "Learn workplace communication and human resource management.",
   },
 ];
 const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
+  "Industry-focused curriculum",
+  "Practical business case studies",
+  "Experienced faculty and mentors",
+  "Leadership and management skill development",
+  "Internship and project opportunities",
+  "Career guidance and professional development",
 ];
-const universitiesList = [
-  { image: u1, name: "St. Lawrence College" },
-  { image: u2, name: "Northern College" },
-  { image: u3, name: "De Anza College" },
-  { image: u4, name: "San Mateo Colleges" },
-  { image: u5, name: "Sacred Heart University" },
-  { image: u6, name: "Louisiana State University" },
-  { image: u7, name: "Northern Alberta Institute" },
-  { image: u8, name: "North Seattle College" },
-];
+
 
 const benefitsList = [
   {
     icon: b1,
-    title: "High Demand in Healthcare Industry",
+    title: "Strong Career Opportunities",
     description:
-      "The healthcare sector continues to grow rapidly, creating strong, persistent demand for trained allied health professionals globally.",
+      "Business graduates are in demand across industries including finance, marketing, consulting, and management.",
   },
   {
     icon: b2,
-    title: "Practical Skill Development",
+    title: "Leadership Skill Development",
     description:
-      "Students gain hands-on training and real-world experience through comprehensive practical sessions and internships.",
+      "Students learn management strategies, decision-making skills, and leadership techniques required in modern organizations.",
   },
   {
     icon: b3,
@@ -150,8 +141,8 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Build a Career in Healthcare & Medical Sciences"
-  description="Start your journey in the healthcare industry with our Allied Health and Science courses designed to provide practical knowledge, professional training, and strong career opportunities."
+  title="Build a Successful Career in Business & Management"
+  description="Gain the knowledge and leadership skills needed to succeed in the modern business world through our comprehensive Business, Commerce, and Management programs."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
@@ -161,16 +152,16 @@ const AlliedHealthandScience = () => {
   title="About the"
   highlight="Program"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Business, Commerce, and Management programs focus on developing essential skills in finance, marketing, entrepreneurship, leadership, and business strategy. These courses prepare students to understand how organizations operate and how to manage business operations effectively.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Students gain practical knowledge of business practices, financial management, market analysis, and organizational leadership, preparing them for dynamic roles in the corporate world."
   ]}
 />
 
 <CoursesOffered
   title="Courses"
   highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  subtitle="Our Business, Commerce, and Management programs include a wide range of specialized fields such as:"
   courses={offeredCourses}
 />;
 
@@ -184,7 +175,7 @@ const AlliedHealthandScience = () => {
 <CareerOpportunities
   title="Career"
   highlight="Opportunities"
-  description="Graduates of Allied Health and Science programs can pursue careers in various healthcare sectors. These roles play a vital part in supporting doctors and healthcare professionals in patient care and medical services."
+  description="Graduates in Business, Commerce, and Management can explore a variety of career opportunities, including:"
   opportunities={opportunitiesList}
   enrollTitle="Who Should"
   enrollHighlight="Enroll?"
@@ -192,17 +183,12 @@ const AlliedHealthandScience = () => {
   enrollList={enrollList}
 />
 
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
+
 
 <BenefitsSection
-  title="Benefits of Allied Health"
+  title="Benefits of  Business & Management"
   highlight="Courses"
-  subtitle="A career in allied health offers stability, growth, and the opportunity to make a real difference."
+  subtitle="A career in Business & Management offers stability, growth, and the opportunity to make a real difference."
   benefits={benefitsList}
 />
 

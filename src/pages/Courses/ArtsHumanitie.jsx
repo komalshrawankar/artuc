@@ -11,8 +11,8 @@ import BenefitsSection from "../../component/Courses/BenefitsSection";
 
 
 
-import heroImage from "../../assets/images/health-science.png";
-import programImage from "../../assets/images/program.png";
+import heroImage from "../../assets/courses/art-bg.png";
+import programImage from "../../assets/courses/art-program.png";
 import c1 from "../../assets/images/c1.png";
 import c2 from "../../assets/images/c2.png";
 import c3 from "../../assets/images/c3.png";
@@ -48,74 +48,65 @@ import blueBg from "../../assets/homepage/blue-bg.png";
 
 
 const opportunitiesList = [
-  { icon: o1, title: "Hospitals and Clinics" },
-  { icon: o2, title: "Diagnostic Laboratories" },
-  { icon: o3, title: "Medical Research Centers" },
-  { icon: o4, title: "Rehabilitation Centers" },
-  { icon: o5, title: "Medical Equipment Companies" },
+  { icon: o1, title: "Education and Teaching" },
+  { icon: o2, title: "Media and Journalism" },
+  { icon: o3, title: "Public Administration" },
+  { icon: o4, title: "Social Work and Community Development" },
+  { icon: o5, title: "Research and Policy Analysis" },
 ];
 const enrollList = [
-  { icon: o11, title: "Students interested in healthcare and medical fields" },
-  { icon: o22, title: "Individuals seeking stable careers in the healthcare industry" },
-  { icon: o33, title: "Students who want practical medical training" },
-  { icon: o44, title: "Candidates looking for job-oriented professional courses" },
+  { icon: o11, title: "Students interested in social sciences and cultural studies" },
+  { icon: o22, title: "Individuals who enjoy research, writing, and critical analysis" },
+  { icon: o33, title: "Students looking for diverse career options in education, media, and public services" },
+  { icon: o44, title: "Candidates seeking programs that develop communication and analytical skills" },
 ];
 const offeredCourses = [
   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
+    title: "Psychology",
     description:
-      "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
+      "Study human behavior, emotions, and mental processes to understand how people think, learn, and interact in different situations.",
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
+    title: "Sociology",
     description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+      "Explore how societies function, including social relationships, cultures, institutions, and the factors that shape communities.",
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
+    title: "Political Science",
     description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+      "Understand political systems, governance, public policies, and the role of government in shaping society and international relations.",
   },
   {
     icon: c4,
-    title: "Dialysis Technology",
+    title: "Literature & Language Studies",
     description:
-      "Specialized training in operating dialysis machines and providing vital care for patients with kidney disorders.",
+      "Develop strong communication and analytical skills through the study of literary works, languages, and cultural expression.",
   },
   {
     icon: c5,
-    title: "Hospital Administration",
+    title: "Media & Communication Studies",
     description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
+      "Examine how media influences society, communication strategies, digital platforms, and modern information sharing.",
   },
   {
     icon: c6,
-    title: "Healthcare Assistant Programs",
+    title: "Public Administration",
     description:
-      "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
+      "Gain knowledge of government operations, policy implementation, and administrative practices used in public sector management.",
   },
 ];
 const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
+  "Comprehensive academic curriculum",
+  "Focus on critical thinking and analysis",
+  "Guidance from experienced faculty",
+  "Interactive learning and discussions",
+  "Research and project opportunities",
+  "Career counselling and academic support",
 ];
-const universitiesList = [
-  { image: u1, name: "St. Lawrence College" },
-  { image: u2, name: "Northern College" },
-  { image: u3, name: "De Anza College" },
-  { image: u4, name: "San Mateo Colleges" },
-  { image: u5, name: "Sacred Heart University" },
-  { image: u6, name: "Louisiana State University" },
-  { image: u7, name: "Northern Alberta Institute" },
-  { image: u8, name: "North Seattle College" },
-];
+
 
 const benefitsList = [
   {
@@ -150,9 +141,8 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Build a Career in Healthcare & Medical Sciences"
-  description="Start your journey in the healthcare industry with our Allied Health and Science courses designed to provide practical knowledge, professional training, and strong career opportunities."
-  buttonText="Book Free Counselling"
+  title="Explore Creativity, Culture, and Society"
+  description="Build a meaningful career in Arts, Humanities, and Social Sciences with programs that develop critical thinking, communication skills, and a deeper understanding of human society and culture."
   buttonLink="/contact"
   image={heroImage}
 />
@@ -161,16 +151,16 @@ const AlliedHealthandScience = () => {
   title="About the"
   highlight="Program"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Arts, Humanities, and Social Sciences programs focus on understanding human behavior, culture, communication, and social structures. These fields encourage creativity, analytical thinking, and the ability to explore complex social and cultural issues.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Through these programs, students gain knowledge in subjects such as history, psychology, sociology, literature, media studies, and political science, preparing them for diverse career opportunities."
   ]}
 />
 
 <CoursesOffered
   title="Courses"
   highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  subtitle="Through these programs, students gain knowledge in subjects such as history, psychology, sociology, literature, media studies, and political science, preparing them for diverse career opportunities."
   courses={offeredCourses}
 />;
 
@@ -184,7 +174,7 @@ const AlliedHealthandScience = () => {
 <CareerOpportunities
   title="Career"
   highlight="Opportunities"
-  description="Graduates of Allied Health and Science programs can pursue careers in various healthcare sectors. These roles play a vital part in supporting doctors and healthcare professionals in patient care and medical services."
+  description="Graduates in Arts, Humanities, and Social Sciences can pursue careers in various sectors, including:"
   opportunities={opportunitiesList}
   enrollTitle="Who Should"
   enrollHighlight="Enroll?"
@@ -192,16 +182,11 @@ const AlliedHealthandScience = () => {
   enrollList={enrollList}
 />
 
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
+
 
 <BenefitsSection
-  title="Benefits of Allied Health"
-  highlight="Courses"
+  title="Benefits of Studying "
+  highlight="Arts & Social Sciences"
   subtitle="A career in allied health offers stability, growth, and the opportunity to make a real difference."
   benefits={benefitsList}
 />

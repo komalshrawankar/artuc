@@ -281,14 +281,21 @@ const Navbar = () => {
             <h5 style={megaHeading}>Admission Services</h5>
 
             <div className="row">
-              {services.map((item, i) => (
-                <div className="col-12 col-md-4 mb-3" key={i}>
-                  <a href="/contact" className="mega-menu-link" style={megaLink}>
-                    {item}
-                  </a>
-                </div>
-              ))}
-            </div>
+  {services.map((item, i) => (
+    <div className="col-12 col-md-4 mb-3" key={i}>
+      <a
+        href={`/courses/admission-services/${item
+          .toLowerCase()
+          .replace(/&/g, "and")
+          .replace(/\s+/g, "-")}`}
+        className="mega-menu-link"
+        style={megaLink}
+      >
+        {item}
+      </a>
+    </div>
+  ))}
+</div>
           </div>
         )}
 
