@@ -100,16 +100,20 @@ const Navbar = () => {
       </style>
 
       <nav
-        className="navbar navbar-expand-lg navbar-light py-0 position-relative"
-        style={{
-          backgroundColor: "#fff",
-          minHeight: "74px",
-          borderBottom: "1px solid #eee",
-          boxShadow: "0 1px 4px rgba(0,0,0,0.05)",
-          zIndex: 9999,
-        }}
-        onMouseLeave={() => setOpenDropdown(null)}
-      >
+  className="navbar navbar-expand-lg navbar-light py-0"
+  style={{
+    position: "fixed",
+    top: "0",
+    left: "0",
+    width: "100%",
+    backgroundColor: "#fff",
+    minHeight: "74px",
+    borderBottom: "1px solid #eee",
+    boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
+    zIndex: "999999",
+  }}
+  onMouseLeave={() => setOpenDropdown(null)}
+>
         <div
           className="container-fluid"
           style={{
@@ -225,7 +229,7 @@ const Navbar = () => {
             </ul>
 
             <div className="d-flex justify-content-lg-end justify-content-start pb-3 pb-lg-0">
-              <a href="/apply" style={applyBtnStyle}>
+              <a href="/contact" style={applyBtnStyle}>
                 Apply Now
               </a>
             </div>
@@ -299,31 +303,34 @@ const Navbar = () => {
           </div>
         )}
 
-        {openDropdown === "study" && (
-          <div
-            className="custom-mega-menu"
-            style={megaMenuStyle}
-            onMouseEnter={() => setOpenDropdown("study")}
+      {openDropdown === "study" && (
+  <div
+    className="custom-mega-menu"
+    style={megaMenuStyle}
+    onMouseEnter={() => setOpenDropdown("study")}
+  >
+    <div className="row">
+      {countries.map((country, i) => (
+        <div className="col-6 col-md-3 mb-4" key={i}>
+          <a
+            href={`/study-abroad/${country[1]
+              .toLowerCase()
+              .replace(/\s+/g, "-")}`}
+            className="mega-menu-link"
+            style={countryLink}
           >
-            <div className="row">
-              {countries.map((country, i) => (
-                <div className="col-6 col-md-3 mb-4" key={i}>
-                  <a
-                    href="/study-abroad"
-                    className="mega-menu-link"
-                    style={countryLink}
-                  >
-                    <span style={{ fontSize: "28px", marginRight: "14px" }}>
-                      {country[0]}
-                    </span>
-                    {country[1]}
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+            <span style={{ fontSize: "24px", marginRight: "14px" }}>
+              {country[0]}
+            </span>
+            {country[1]}
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
       </nav>
+      <div style={{ height: "74px" }}></div>
     </>
   );
 };
