@@ -163,18 +163,19 @@ const AlliedHealthandScience = () => {
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Career "
+  highlight="Counseling"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Choosing the right career path is one of the most important decisions in a student’s life. Our Career Counseling service helps students understand their interests, strengths, and academic goals to make informed decisions about their future studies and careers.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Our experienced counselors provide personalized guidance to help students explore the best courses, universities, and career opportunities available worldwide. We focus on understanding each student’s aspirations and provide expert advice to help them select the right academic path",
+    "With proper career counseling, students gain clarity about their goals, learn about different career options, and confidently plan their journey toward a successful future."
   ]}
 />
 
 <CoursesOffered
-  title="Courses"
-  highlight="Offered"
+  title="What We "
+  highlight="Offer"
   subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
   courses={offeredCourses}
 />;
@@ -223,7 +224,7 @@ const AlliedHealthandScience = () => {
 <TopUniversities
   title="Top Universities Offering Allied Health"
   highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
+  subtitle="Here are five destinations where studying architecture offers an inspiring and globally recognized experience:"
   universities={universitiesList}
 />
 

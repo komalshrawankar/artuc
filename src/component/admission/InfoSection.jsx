@@ -102,9 +102,7 @@ const InfoSection = ({
               width: "100%",
               maxWidth: "550px",
               height: mobile ? "250px" : "420px",
-              objectFit: "cover",
-              borderRadius: "18px",
-              boxShadow: "0 18px 35px rgba(0,0,0,.15)",
+           
             }}
           />
         </div>

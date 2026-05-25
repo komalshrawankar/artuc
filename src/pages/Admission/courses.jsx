@@ -52,49 +52,38 @@ import blueBg from "../../assets/homepage/blue-bg.png";
 
 
 
-const opportunitiesList = [
-  { icon: o1, title: "Hospitals and Clinics" },
-  { icon: o2, title: "Diagnostic Laboratories" },
-  { icon: o3, title: "Medical Research Centers" },
-  { icon: o4, title: "Rehabilitation Centers" },
-  { icon: o5, title: "Medical Equipment Companies" },
-];
-const enrollList = [
-  { icon: o11, title: "Students interested in healthcare and medical fields" },
-  { icon: o22, title: "Individuals seeking stable careers in the healthcare industry" },
-  { icon: o33, title: "Students who want practical medical training" },
-  { icon: o44, title: "Candidates looking for job-oriented professional courses" },
-];
+
+
 const offeredCourses = [
   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
+    title: "Global Reputation",
     description:
       "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
+    title: "Curriculum Detail",
     description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+  "Analyzing course modules to ensure they align with modern industry requirements",
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
+    title: "Fees & Scholarships",
     description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+      "Evaluating total cost of attendance and availability  financial aid for you.",
   },
   {
     icon: c4,
-    title: "Dialysis Technology",
+    title: "Internship Links",
     description:
-      "Specialized training in operating dialysis machines and providing vital care for patients with kidney disorders.",
+      "Industry partnerships and practicaltraining opportunities offered by the school.",
   },
   {
     icon: c5,
-    title: "Hospital Administration",
+    title: "Facilities",
     description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
+      "Labs, libraries, sports centers, andstudent housing quality assessments.",
   },
   {
     icon: c6,
@@ -103,14 +92,7 @@ const offeredCourses = [
       "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
   },
 ];
-const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
-];
+
 const universitiesList = [
   { image: u1, name: "St. Lawrence College" },
   { image: u2, name: "Northern College" },
@@ -163,18 +145,18 @@ const AlliedHealthandScience = () => {
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Course & "
+  highlight="University Selection"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Selecting the right course and university is a crucial step in building a successful academic and professional future. With countless programs and institutions available across the world, making the right choice can feel overwhelming. Our Course & University Selection service helps students identify the best options based on their interests, academic background, and long-term career goals.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Our experienced advisors provide personalized guidance to help students explore suitable programs and shortlist universities that offer high-quality education, strong career prospects, and global recognition. We focus on ensuring that every student chooses a path that supports both their academic success and future career growth."
   ]}
 />
 
 <CoursesOffered
-  title="Courses"
-  highlight="Offered"
+  title="Factors "
+  highlight="We Consider"
   subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
   courses={offeredCourses}
 />;
@@ -193,28 +175,6 @@ const AlliedHealthandScience = () => {
   ]}
 />
 
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
-/>
 
 
 

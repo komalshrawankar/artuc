@@ -163,18 +163,18 @@ const AlliedHealthandScience = () => {
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Education Loan "
+  highlight="Assistance"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Pursuing higher education, especially abroad, can require significant financial planning. Our Education Loan Assistance service helps students secure the financial support they need to achieve their academic goals without unnecessary stress. We guide students and their families through the entire loan process, making it easier to access funding for tuition fees, living expenses, travel, and other education-related costs.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Our team works closely with trusted financial institutions and banks to help students find suitable loan options with competitive interest rates and flexible repayment plans. From selecting the right lender to preparing the required documents, we provide complete support at every step of the loan application process."
   ]}
 />
 
 <CoursesOffered
-  title="Courses"
-  highlight="Offered"
+  title="What We "
+  highlight="Help With"
   subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
   courses={offeredCourses}
 />;

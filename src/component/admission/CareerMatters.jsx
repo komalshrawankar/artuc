@@ -1,5 +1,5 @@
 import React from "react";
-import careerImg from "../assets/career-counseling.jpg"; // update path
+import careerImg from "../../assets/admission/career-img.png"; // update path
 
 const CareerMatters = () => {
   const mobile = window.innerWidth <= 768;
@@ -108,9 +108,7 @@ const CareerMatters = () => {
               width: "100%",
               maxWidth: "550px",
               height: mobile ? "250px" : "420px",
-              objectFit: "cover",
-              borderRadius: "18px",
-              boxShadow: "0 20px 35px rgba(0,0,0,0.15)",
+              
             }}
           />
         </div>
