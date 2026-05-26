@@ -48,11 +48,11 @@ import blueBg from "../../assets/homepage/blue-bg.png";
 
 
 const opportunitiesList = [
-  { icon: o1, title: "Hospitals and Clinics" },
-  { icon: o2, title: "Diagnostic Laboratories" },
-  { icon: o3, title: "Medical Research Centers" },
-  { icon: o4, title: "Rehabilitation Centers" },
-  { icon: o5, title: "Medical Equipment Companies" },
+  { icon: o1, title: "Hotels and Resorts" },
+  { icon: o2, title: "Restaurants and Catering Services" },
+  { icon: o3, title: "Airlines and Cruise Lines" },
+  { icon: o4, title: "Event Management Companies" },
+  { icon: o5, title: "Travel and Tourism Agencies" },
 ];
 const enrollList = [
   { icon: o11, title: "Students interested in healthcare and medical fields" },
@@ -63,84 +63,75 @@ const enrollList = [
 const offeredCourses = [
   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
+    title: "Hospitality Management",
     description:
-      "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
+      "Study human behavior, emotions, and mental processes to understand how people think, learn, and interact in different situations.",
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
+    title: "Hotel and Resort Management",
     description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+      "Explore how societies function, including social relationships, cultures, institutions, and the factors that shape communities.",
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
+    title: "Culinary Arts and Food Production",
     description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+      "Understand political systems, governance, public policies, and the role of government in shaping society and international relations.",
   },
   {
     icon: c4,
-    title: "Dialysis Technology",
+    title: "Tourism and Travel Management",
     description:
-      "Specialized training in operating dialysis machines and providing vital care for patients with kidney disorders.",
+      "Develop strong communication and analytical skills through the study of literary works, languages, and cultural expression.",
   },
   {
     icon: c5,
-    title: "Hospital Administration",
+    title: "Event Management",
     description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
+      "Examine how media influences society, communication strategies, digital platforms, and modern information sharing.",
   },
   {
     icon: c6,
-    title: "Healthcare Assistant Programs",
+    title: "Personal and Customer Service Training",
     description:
-      "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
+      "Gain knowledge of government operations, policy implementation, and administrative practices used in public sector management.",
   },
 ];
 const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
+  "Practical and industry-focused training",
+  "Hands-on learning experience",
+  "Guidance from experienced professionals",
+  "Exposure to modern hospitality practices",
+  "Internship and training opportunities",
+  "Career support and industry insights",
 ];
-const universitiesList = [
-  { image: u1, name: "St. Lawrence College" },
-  { image: u2, name: "Northern College" },
-  { image: u3, name: "De Anza College" },
-  { image: u4, name: "San Mateo Colleges" },
-  { image: u5, name: "Sacred Heart University" },
-  { image: u6, name: "Louisiana State University" },
-  { image: u7, name: "Northern Alberta Institute" },
-  { image: u8, name: "North Seattle College" },
-];
+
 
 const benefitsList = [
   {
     icon: b1,
-    title: "High Demand in Healthcare Industry",
+    title: "Practical Skill Development",
     description:
-      "The healthcare sector continues to grow rapidly, creating strong, persistent demand for trained allied health professionals globally.",
+      "Students gain hands-on training and real-world experience in hospitality operations.",
   },
   {
     icon: b2,
-    title: "Practical Skill Development",
+    title: "Growing Industry Demand",
     description:
-      "Students gain hands-on training and real-world experience through comprehensive practical sessions and internships.",
+      "Tourism and hospitality industries continue to grow, creating demand for skilled professionals.",
   },
   {
     icon: b3,
-    title: "Diverse Career Opportunities",
+    title: "Customer Service Expertise",
     description:
-      "Allied health professionals can choose to work in hospitals, laboratories, diagnostic centers, and specialized healthcare institutions.",
+      "Students learn valuable communication and customer service skills essential for service-based careers.",
   },
   {
     icon: b4,
-    title: "Opportunities in India and Abroad",
+    title: " Global Career Opportunities",
     description:
-      "Qualified healthcare professionals have exceptional opportunities to work, migrate, and establish careers in various countries around the world.",
+      "The hospitality industry offers job opportunities worldwide in hotels, resorts, and tourism organizations.",
   },
 ];
 
@@ -150,8 +141,8 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Build a Career in Healthcare & Medical Sciences"
-  description="Start your journey in the healthcare industry with our Allied Health and Science courses designed to provide practical knowledge, professional training, and strong career opportunities."
+  title="Build a Career in Food, Hospitality & Personal Services"
+  description="Discover exciting opportunities in the hospitality and service industry with programs designed to develop practical skills, customer service expertise, and professional knowledge."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
@@ -161,16 +152,16 @@ const AlliedHealthandScience = () => {
   title="About the"
   highlight="Program"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Food, Hospitality, and Personal Services programs focus on preparing students for careers in hospitality management, culinary arts, tourism, and personal service industries. These courses combine practical training with industry knowledge to help students develop the skills required in hotels, restaurants, resorts, and service organizations.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Students gain hands-on experience in hospitality operations, customer service, food preparation, and service management."
   ]}
 />
 
 <CoursesOffered
   title="Courses"
   highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  subtitle="Our Food, Hospitality, and Personal Services programs include various specializations such as"
   courses={offeredCourses}
 />;
 
@@ -184,7 +175,7 @@ const AlliedHealthandScience = () => {
 <CareerOpportunities
   title="Career"
   highlight="Opportunities"
-  description="Graduates of Allied Health and Science programs can pursue careers in various healthcare sectors. These roles play a vital part in supporting doctors and healthcare professionals in patient care and medical services."
+  description="Graduates of Food, Hospitality, and Personal Services programs can explore careers in various sectors, including:"
   opportunities={opportunitiesList}
   enrollTitle="Who Should"
   enrollHighlight="Enroll?"
@@ -192,17 +183,12 @@ const AlliedHealthandScience = () => {
   enrollList={enrollList}
 />
 
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
+
 
 <BenefitsSection
-  title="Benefits of Allied Health"
-  highlight="Courses"
-  subtitle="A career in allied health offers stability, growth, and the opportunity to make a real difference."
+  title="Benefits of Studying "
+  highlight="Arts & Social Sciences"
+ 
   benefits={benefitsList}
 />
 

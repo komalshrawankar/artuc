@@ -111,7 +111,7 @@ const Footer = () => {
             </p>
             <p style={{ fontSize: "14px", lineHeight: "1.6", maxWidth: "360px" }}>
               📍 ARTUC – Foreign Education, Training & Placement Services, 3rd
-              Floor, Plot No 47, Katol Nagar, Khamla, Nagpur, Maharashtra
+              Floor, Plot No 47, Kotwal Nagar, Khamla, Nagpur, Maharashtra
               440022
             </p>
           </div>

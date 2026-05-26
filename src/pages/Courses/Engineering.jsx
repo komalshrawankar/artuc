@@ -48,63 +48,57 @@ import blueBg from "../../assets/homepage/blue-bg.png";
 
 
 const opportunitiesList = [
-  { icon: o1, title: "Hospitals and Clinics" },
-  { icon: o2, title: "Diagnostic Laboratories" },
-  { icon: o3, title: "Medical Research Centers" },
-  { icon: o4, title: "Rehabilitation Centers" },
-  { icon: o5, title: "Medical Equipment Companies" },
+  { icon: o1, title: "Technology and IT" },
+  { icon: o2, title: "Construction and Infrastructure" },
+  { icon: o3, title: "Manufacturing and Production" },
+  { icon: o4, title: "Energy and Environmental Engineering" },
+  { icon: o5, title: "Research and Development" },
 ];
 const enrollList = [
-  { icon: o11, title: "Students interested in healthcare and medical fields" },
-  { icon: o22, title: "Individuals seeking stable careers in the healthcare industry" },
-  { icon: o33, title: "Students who want practical medical training" },
-  { icon: o44, title: "Candidates looking for job-oriented professional courses" },
+  { icon: o11, title: "University selection guidance" },
+  { icon: o22, title: "Application and admission support" },
+  { icon: o33, title: "Visa assistance" },
+  { icon: o44, title: "Scholarship guidance" },
 ];
 const offeredCourses = [
   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
-    description:
-      "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
+    title: "Mechanical Engineering",
+    
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
-    description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+    title: "Civil Engineering",
+   
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
-    description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+    title: "Electrical Engineering",
+   
   },
   {
     icon: c4,
-    title: "Dialysis Technology",
-    description:
-      "Specialized training in operating dialysis machines and providing vital care for patients with kidney disorders.",
+    title: "Computer Engineering",
+   
   },
   {
     icon: c5,
-    title: "Hospital Administration",
-    description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
+    title: "Aerospace Engineering",
+   
   },
   {
     icon: c6,
-    title: "Healthcare Assistant Programs",
-    description:
-      "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
+    title: "Chemical Engineering",
+   
   },
 ];
 const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
+  "Internationally recognized engineering degrees",
+  "Access to modern labs and research facilities",
+  "Internship and practical training opportunities",
+  " Guidance from experienced faculty",
+  "Global career exposure",
+  "Strong academic and professional development",
 ];
 const universitiesList = [
   { image: u1, name: "St. Lawrence College" },
@@ -190,20 +184,6 @@ const AlliedHealthandScience = () => {
   enrollHighlight="Enroll?"
   enrollSubtitle="This program is ideal for:"
   enrollList={enrollList}
-/>
-
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
-
-<BenefitsSection
-  title="Benefits of Allied Health"
-  highlight="Courses"
-  subtitle="A career in allied health offers stability, growth, and the opportunity to make a real difference."
-  benefits={benefitsList}
 />
 
 <Testimonials/>

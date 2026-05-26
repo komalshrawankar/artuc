@@ -150,8 +150,8 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Build a Career in Healthcare & Medical Sciences"
-  description="Start your journey in the healthcare industry with our Allied Health and Science courses designed to provide practical knowledge, professional training, and strong career opportunities."
+  title="Build a Future in Information Technology"
+  description="Step into the world of technology with programs designed to develop skills in software development, data management, cybersecurity, and modern digital technologies."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
@@ -170,7 +170,7 @@ const AlliedHealthandScience = () => {
 <CoursesOffered
   title="Courses"
   highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  subtitle="Our Information Technology programs include a range of specialized areas such as:"
   courses={offeredCourses}
 />;
 
@@ -184,7 +184,7 @@ const AlliedHealthandScience = () => {
 <CareerOpportunities
   title="Career"
   highlight="Opportunities"
-  description="Graduates of Allied Health and Science programs can pursue careers in various healthcare sectors. These roles play a vital part in supporting doctors and healthcare professionals in patient care and medical services."
+  description="Graduates of Information Technology programs can pursue careers in various fields, including:"
   opportunities={opportunitiesList}
   enrollTitle="Who Should"
   enrollHighlight="Enroll?"
