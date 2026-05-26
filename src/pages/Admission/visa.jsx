@@ -49,6 +49,43 @@ import Testimonials from '../../component/homepage/Testimonials';
 import CTASection from '../../component/Testprep/CTASection';
 import Footer from '../../component/Footer';
 import blueBg from "../../assets/homepage/blue-bg.png";
+import LORBenefitsSection from "../../component/admission/LORBenefitsSection";
+import ScholarshipBenefitsSection from "../../component/admission/ScholarshipBenefitsSection";
+
+const scholarshipBenefits = [
+  "Valid passport",
+  "University admission letter",
+  "Financial proof and bank statements",
+  "Academic transcripts and certificates",
+  "English language test scores",
+];
+
+const scholarshipTypes = [
+  "Accurate and well-prepared visa application",
+  "Reduced chances of application errors",
+  "Professional guidance on visa requirements",
+  "Increased confidence during visa interviews",
+  "Higher chances of visa approval",
+];
+const sopBenefits = [
+  "Enhances your chances of admission",
+  "Demonstrates your academic and professional potential",
+  "Builds credibility in your application",
+  "Creates a strong impression on university admission committees",
+];
+
+const recommendationTypes = [
+  {
+    title: "Academic Recommendation Letter",
+    description:
+      "Written by professors, teachers, or academic advisors who can highlight your academic performance and abilities.",
+  },
+  {
+    title: "Professional Recommendation Letter",
+    description:
+      "Written by employers, supervisors, or managers who can speak about your work ethic, skills, and professional achievements.",
+  },
+];
 
 
 
@@ -104,12 +141,12 @@ const offeredCourses = [
   },
 ];
 const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
+  "Guidance on student visa requirements",
+  "Assistance with visa application forms",
+  "Document preparation and verification",
+  "Financial documentation guidance",
+  "Visa interview preparation",
+  "Tracking and follow-up of visa applications",
 ];
 const universitiesList = [
   { image: u1, name: "St. Lawrence College" },
@@ -152,94 +189,64 @@ const benefitsList = [
 
 const AlliedHealthandScience = () => {
   return (
-   <>
-   <Navbar/>
-   <CoursesHero
-  title="Expert Visa Application Support for Study Abroad"
-  description="Get professional guidance to complete your student visa application accurately and improve your chances of visa approval."
-  buttonText="Book Free Counselling"
-  buttonLink="/contact"
-  image={heroImage}
-/>
-<ProgramInfoSection
-  image={programImage}
-  title="About the"
-  highlight="Program"
-  description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    <>
+      <Navbar />
+      <CoursesHero
+        title="Expert Visa Application Support for Study Abroad"
+        description="Get professional guidance to complete your student visa application accurately and improve your chances of visa approval."
+        buttonText="Book Free Counselling"
+        buttonLink="/contact"
+        image={heroImage}
+      />
+      <ProgramInfoSection
+        image={programImage}
+        title="Visa Application "
+        highlight="Support"
+        description={[
+          "Securing a student visa is a critical step in your study abroad journey. Each country has its own visa requirements, documentation procedures, and application guidelines. Our Visa Application Support service ensures that students receive expert guidance to complete their visa process efficiently and confidently.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
-  ]}
-/>
+          "Our experienced advisors assist students in understanding visa requirements, preparing the necessary documents, and submitting applications correctly. With proper planning and professional support, we help increase the chances of successful visa approval."
+        ]}
+      />
 
-<CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
-  courses={offeredCourses}
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <CourseHighlights
+        title="Course"
+        highlight="Highlights"
+        subtitle="Experience a comprehensive curriculum designed to build practical skills."
+        highlights={highlightsList}
+      />
+     <ScholarshipBenefitsSection
+  leftTitle="Common Visa "
+  leftHighlight="Documents"
+  benefits={scholarshipBenefits}
+  rightTitle="Benefits of Visa "
+  rightHighlight="Application Support"
+  scholarshipTypes={scholarshipTypes}
 />;
-
-
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
-
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
-/>
-
-
-
-
-
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
-
-
-
-<Testimonials/>
-<CTASection
-  bgImage={blueBg}
-  title="Need Career"
-  highlight="Guidance?"
-  description="Get personalized career advice from our experts and choose the right course to achieve your professional goals."
-  buttonText="Explore Courses"
-  buttonLink="/courses"
-/>
-<Footer/>
-   </>
+      <Testimonials />
+      <CTASection
+        bgImage={blueBg}
+        title="Need Career"
+        highlight="Guidance?"
+        description="Get personalized career advice from our experts and choose the right course to achieve your professional goals."
+        buttonText="Explore Courses"
+        buttonLink="/courses"
+      />
+      <Footer />
+    </>
   )
 }
 

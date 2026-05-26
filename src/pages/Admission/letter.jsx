@@ -49,9 +49,28 @@ import Testimonials from '../../component/homepage/Testimonials';
 import CTASection from '../../component/Testprep/CTASection';
 import Footer from '../../component/Footer';
 import blueBg from "../../assets/homepage/blue-bg.png";
+import LORBenefitsSection from "../../component/admission/LORBenefitsSection";
 
 
+const sopBenefits = [
+  "Enhances your chances of admission",
+  "Demonstrates your academic and professional potential",
+  "Builds credibility in your application",
+  "Creates a strong impression on university admission committees",
+];
 
+const recommendationTypes = [
+  {
+    title: "Academic Recommendation Letter",
+    description:
+      "Written by professors, teachers, or academic advisors who can highlight your academic performance and abilities.",
+  },
+  {
+    title: "Professional Recommendation Letter",
+    description:
+      "Written by employers, supervisors, or managers who can speak about your work ethic, skills, and professional achievements.",
+  },
+];
 const opportunitiesList = [
   { icon: o1, title: "Hospitals and Clinics" },
   { icon: o2, title: "Diagnostic Laboratories" },
@@ -104,12 +123,12 @@ const offeredCourses = [
   },
 ];
 const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
+  "Strengthens your university application",
+  "Provides credibility through academic or professional references",
+  "Highlights your achievements, skills, and character",
+  "Demonstrates your potential for success in higher education",
+  "Helps universities understand your abilities beyond academic records",
+  "Feedback and improvement strategies",
 ];
 const universitiesList = [
   { image: u1, name: "St. Lawrence College" },
@@ -122,32 +141,7 @@ const universitiesList = [
   { image: u8, name: "North Seattle College" },
 ];
 
-const benefitsList = [
-  {
-    icon: b1,
-    title: "High Demand in Healthcare Industry",
-    description:
-      "The healthcare sector continues to grow rapidly, creating strong, persistent demand for trained allied health professionals globally.",
-  },
-  {
-    icon: b2,
-    title: "Practical Skill Development",
-    description:
-      "Students gain hands-on training and real-world experience through comprehensive practical sessions and internships.",
-  },
-  {
-    icon: b3,
-    title: "Diverse Career Opportunities",
-    description:
-      "Allied health professionals can choose to work in hospitals, laboratories, diagnostic centers, and specialized healthcare institutions.",
-  },
-  {
-    icon: b4,
-    title: "Opportunities in India and Abroad",
-    description:
-      "Qualified healthcare professionals have exceptional opportunities to work, migrate, and establish careers in various countries around the world.",
-  },
-];
+
 
 
 const AlliedHealthandScience = () => {
@@ -163,69 +157,38 @@ const AlliedHealthandScience = () => {
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Letter of "
+  highlight="Recommendation"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "A Letter of Recommendation is an important document required by many universities during the admission process. It provides an external perspective on a student’s academic abilities, skills, character, and potential for success. Universities use these letters to better understand the applicant beyond grades and test scores.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Our LOR guidance service helps students understand how to request, structure, and prepare effective recommendation letters from professors, teachers, or employers. We ensure that the letter highlights the student’s strengths, achievements, leadership qualities, and academic potential in a professional and impactful way."
   ]}
 />
 
-<CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
-  courses={offeredCourses}
-/>;
+<CourseHighlights
+        title="Course"
+        highlight="Highlights"
+        subtitle="Experience a comprehensive curriculum designed to build practical skills."
+        highlights={highlightsList}
+      />
 
-
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
-
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
+<LORBenefitsSection
+  leftTitle="Benefits of a Strong"
+  leftHighlight="SOP"
+  benefits={sopBenefits}
+  rightTitle="Types of Recommendation"
+  rightHighlight="Letters"
+  recommendationTypes={recommendationTypes}
 />
 
 
 
 
 
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
+
+
+
 
 
 

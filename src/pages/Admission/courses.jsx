@@ -157,23 +157,12 @@ const AlliedHealthandScience = () => {
 <CoursesOffered
   title="Factors "
   highlight="We Consider"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+
   courses={offeredCourses}
 />;
 
 
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
+
 
 
 
@@ -181,9 +170,9 @@ const AlliedHealthandScience = () => {
 
 
 <TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
+  title="Top Universities for "
+  highlight="Career Counseling"
+  subtitle="Here are five destinations where studying architecture offers an inspiring and globally recognized experience:"
   universities={universitiesList}
 />
 

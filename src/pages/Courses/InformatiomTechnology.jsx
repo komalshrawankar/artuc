@@ -48,11 +48,11 @@ import blueBg from "../../assets/homepage/blue-bg.png";
 
 
 const opportunitiesList = [
-  { icon: o1, title: "Hospitals and Clinics" },
-  { icon: o2, title: "Diagnostic Laboratories" },
-  { icon: o3, title: "Medical Research Centers" },
-  { icon: o4, title: "Rehabilitation Centers" },
-  { icon: o5, title: "Medical Equipment Companies" },
+  { icon: o1, title: "Software Developer" },
+  { icon: o2, title: "Web Developer" },
+  { icon: o3, title: "Data Analyst" },
+  { icon: o4, title: "Cybersecurity Specialist" },
+  { icon: o5, title: "IT Consultant" },
 ];
 const enrollList = [
   { icon: o11, title: "Students interested in healthcare and medical fields" },
@@ -63,84 +63,75 @@ const enrollList = [
 const offeredCourses = [
   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
+    title: "Software Development",
     description:
-      "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
+      "Learn to design and build software applications and systems.",
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
+    title: "Web Development",
     description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+      "Develop websites and web applications using modern technologies.",
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
+    title: "Data Analytics",
     description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+      "Analyze data to gain insights and support business decisions.",
   },
   {
     icon: c4,
-    title: "Dialysis Technology",
+    title: "Cybersecurity",
     description:
-      "Specialized training in operating dialysis machines and providing vital care for patients with kidney disorders.",
+      "Protect systems, networks, and data from cyber threats.",
   },
   {
     icon: c5,
-    title: "Hospital Administration",
+    title: "Artificial Intelligence & Machine Learning",
     description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
+      "Build intelligent systems that learn from data and automate tasks.",
   },
   {
     icon: c6,
-    title: "Healthcare Assistant Programs",
+    title: "Cloud Computing",
     description:
-      "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
+      "Learn to manage and deploy applications using cloud platforms.",
   },
 ];
 const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
+  "Industry-focused IT curriculum",
+  "Practical coding and development projects",
+  "Guidance from experienced trainers",
+  "Exposure to modern programming tools and technologies",
+  "Hands-on learning and real-world projects",
+  "Career guidance and placement support",
 ];
-const universitiesList = [
-  { image: u1, name: "St. Lawrence College" },
-  { image: u2, name: "Northern College" },
-  { image: u3, name: "De Anza College" },
-  { image: u4, name: "San Mateo Colleges" },
-  { image: u5, name: "Sacred Heart University" },
-  { image: u6, name: "Louisiana State University" },
-  { image: u7, name: "Northern Alberta Institute" },
-  { image: u8, name: "North Seattle College" },
-];
+
 
 const benefitsList = [
   {
     icon: b1,
-    title: "High Demand in Healthcare Industry",
+    title: "High-Demand Career Field",
     description:
-      "The healthcare sector continues to grow rapidly, creating strong, persistent demand for trained allied health professionals globally.",
+      "Technology professionals are needed across industries, creating strong job opportunities.",
   },
   {
     icon: b2,
-    title: "Practical Skill Development",
+    title: "Continuous Innovation",
     description:
-      "Students gain hands-on training and real-world experience through comprehensive practical sessions and internships.",
+      "The IT industry constantly evolves, offering opportunities to learn new technologies and advance your career.",
   },
   {
     icon: b3,
-    title: "Diverse Career Opportunities",
+    title: "Competitive Salaries",
     description:
-      "Allied health professionals can choose to work in hospitals, laboratories, diagnostic centers, and specialized healthcare institutions.",
+      "IT professionals often receive attractive salary packages and career growth opportunities.",
   },
   {
     icon: b4,
-    title: "Opportunities in India and Abroad",
+    title: "Global Career Opportunities",
     description:
-      "Qualified healthcare professionals have exceptional opportunities to work, migrate, and establish careers in various countries around the world.",
+      "IT skills are in demand worldwide, allowing professionals to work with international companies.",
   },
 ];
 
@@ -161,9 +152,9 @@ const AlliedHealthandScience = () => {
   title="About the"
   highlight="Program"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Information Technology programs focus on developing technical knowledge and practical skills required in today’s digital world. These courses prepare students to understand computer systems, software development, data management, and emerging technologies.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "With technology transforming every industry, IT professionals are in high demand across sectors such as software development, finance, healthcare, and e-commerce."
   ]}
 />
 
@@ -192,17 +183,12 @@ const AlliedHealthandScience = () => {
   enrollList={enrollList}
 />
 
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
+
 
 <BenefitsSection
-  title="Benefits of Allied Health"
-  highlight="Courses"
-  subtitle="A career in allied health offers stability, growth, and the opportunity to make a real difference."
+  title="Benefits of Studying "
+  highlight="Information Technology"
+ 
   benefits={benefitsList}
 />
 

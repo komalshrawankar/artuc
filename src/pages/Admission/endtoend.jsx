@@ -104,12 +104,12 @@ const offeredCourses = [
   },
 ];
 const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
+  "University and program application guidance",
+  "Application form completion",
+  "Statement of Purpose (SOP) guidance",
+  "Resume and academic profile preparation",
+  "Document verification and submission",
+  "Application tracking and follow-ups",
 ];
 const universitiesList = [
   { image: u1, name: "St. Lawrence College" },
@@ -154,7 +154,7 @@ const AlliedHealthandScience = () => {
   return (
    <>
    <Navbar/>
-   <CoursesHero
+  <CoursesHero
   title="Complete Application Support for Your Study Abroad Journey"
   description="From selecting the right university to submitting successful applications, we guide you through every step of the admission process."
   buttonText="Book Free Counselling"
@@ -163,69 +163,32 @@ const AlliedHealthandScience = () => {
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="End-to-End "
+  highlight="Application Support"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Applying to universities abroad involves multiple steps including documentation, application forms, statement of purpose, and meeting strict deadlines. Our End-to-End Application Support service simplifies the entire process by providing expert guidance at every stage of your university application journey.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Our experienced team helps students prepare strong applications that highlight their academic achievements, skills, and future goals. We ensure that all documents are accurate, complete, and submitted on time to increase the chances of admission."
   ]}
 />
-
-<CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
-  courses={offeredCourses}
-/>;
-
-
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
-
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
+<CourseHighlights
+  title="Course"
+  highlight="Highlights"
+  subtitle="Experience a comprehensive curriculum designed to build practical skills."
+  highlights={highlightsList}
 />
 
 
 
 
 
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
+
+
+
+
+
+
+
 
 
 

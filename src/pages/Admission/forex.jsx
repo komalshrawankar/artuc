@@ -104,12 +104,12 @@ const offeredCourses = [
   },
 ];
 const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
+  "Foreign currency exchange for study abroad",
+  "International tuition fee transfers",
+  "Guidance on forex cards for students",
+  "Assistance with wire transfers and bank payments",
+  "Information on exchange rates and forex regulations",
+  "Support for living expense transfers",
 ];
 const universitiesList = [
   { image: u1, name: "St. Lawrence College" },
@@ -122,32 +122,7 @@ const universitiesList = [
   { image: u8, name: "North Seattle College" },
 ];
 
-const benefitsList = [
-  {
-    icon: b1,
-    title: "High Demand in Healthcare Industry",
-    description:
-      "The healthcare sector continues to grow rapidly, creating strong, persistent demand for trained allied health professionals globally.",
-  },
-  {
-    icon: b2,
-    title: "Practical Skill Development",
-    description:
-      "Students gain hands-on training and real-world experience through comprehensive practical sessions and internships.",
-  },
-  {
-    icon: b3,
-    title: "Diverse Career Opportunities",
-    description:
-      "Allied health professionals can choose to work in hospitals, laboratories, diagnostic centers, and specialized healthcare institutions.",
-  },
-  {
-    icon: b4,
-    title: "Opportunities in India and Abroad",
-    description:
-      "Qualified healthcare professionals have exceptional opportunities to work, migrate, and establish careers in various countries around the world.",
-  },
-];
+
 
 
 const AlliedHealthandScience = () => {
@@ -163,69 +138,30 @@ const AlliedHealthandScience = () => {
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Forex "
+  highlight="Assistance"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "When planning to study abroad, managing foreign currency and international payments is an important part of the process. Our Forex Assistance service helps students handle currency exchange, tuition fee payments, and overseas financial transactions in a safe and efficient manner.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "We guide students and their families in understanding forex options, exchange rates, and the best ways to transfer funds internationally. Our goal is to make the process simple, transparent, and secure so students can focus on their education without financial worries."
   ]}
 />
 
-<CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
-  courses={offeredCourses}
-/>;
-
-
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
-
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
+<CourseHighlights
+  title="Course"
+  highlight="Highlights"
+  subtitle="Experience a comprehensive curriculum designed to build practical skills."
+  highlights={highlightsList}
 />
 
 
 
 
 
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
+
+
+
+
 
 
 

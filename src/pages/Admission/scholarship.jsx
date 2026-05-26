@@ -49,9 +49,33 @@ import Testimonials from '../../component/homepage/Testimonials';
 import CTASection from '../../component/Testprep/CTASection';
 import Footer from '../../component/Footer';
 import blueBg from "../../assets/homepage/blue-bg.png";
+import LORBenefitsSection from "../../component/admission/LORBenefitsSection";
+import ScholarshipBenefitsSection from "../../component/admission/ScholarshipBenefitsSection";
 
 
 
+
+
+const sopBenefits = [
+  "Reduced education and living expenses",
+  "Increased chances of receiving financial aid",
+  "Expert guidance throughout the application process",
+  "Well-prepared scholarship applications",
+  "Better financial planning for studying abroad",
+];
+
+const recommendationTypes = [
+  {
+    title: "Academic Recommendation Letter",
+    description:
+      "Written by professors, teachers, or academic advisors who can highlight your academic performance and abilities.",
+  },
+  {
+    title: "Professional Recommendation Letter",
+    description:
+      "Written by employers, supervisors, or managers who can speak about your work ethic, skills, and professional achievements.",
+  },
+];
 const opportunitiesList = [
   { icon: o1, title: "Hospitals and Clinics" },
   { icon: o2, title: "Diagnostic Laboratories" },
@@ -149,7 +173,21 @@ const benefitsList = [
   },
 ];
 
+const scholarshipBenefits = [
+  "Reduced education and living expenses",
+  "Increased chances of receiving financial aid",
+  "Expert guidance throughout the application process",
+  "Well-prepared scholarship applications",
+  "Better financial planning for studying abroad",
+];
 
+const scholarshipTypes = [
+  "Merit-Based Scholarships",
+  "Need-Based Scholarships",
+  "Government Scholarships",
+  "University Scholarships",
+  "Program-Specific Scholarships",
+];
 const AlliedHealthandScience = () => {
   return (
    <>
@@ -163,69 +201,38 @@ const AlliedHealthandScience = () => {
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Scholarship "
+  highlight="Application Support"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Scholarships are a great way for students to reduce the financial burden of higher education, especially when studying abroad. Many universities, governments, and organizations offer scholarships based on academic merit, leadership skills, financial need, or extracurricular achievements.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Our Scholarship Application Support service helps students explore scholarship opportunities and prepare strong applications that highlight their achievements, skills, and academic potential. We guide students through every step of the process to improve their chances of securing financial assistance."
   ]}
 />
 
-<CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
-  courses={offeredCourses}
+<CourseHighlights
+        title="Course"
+        highlight="Highlights"
+        subtitle="Experience a comprehensive curriculum designed to build practical skills."
+        highlights={highlightsList}
+      />
+
+<ScholarshipBenefitsSection
+  leftTitle="Benefits of Scholarship"
+  leftHighlight="Support"
+  benefits={scholarshipBenefits}
+  rightTitle="Types of"
+  rightHighlight="Scholarships"
+  scholarshipTypes={scholarshipTypes}
 />;
 
 
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
-
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
-/>
 
 
 
 
 
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
+
 
 
 

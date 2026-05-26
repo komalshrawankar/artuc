@@ -33,11 +33,11 @@ import o11 from "../../assets/images/o11.png";
 import o22 from "../../assets/images/o22.png";
 import o33 from "../../assets/images/o33.png";
 import o44 from "../../assets/images/o44.png";
-import u1 from "../../assets/images/u1.png";
-import u2 from "../../assets/images/u2.png";
-import u3 from "../../assets/images/u3.png";
-import u4 from "../../assets/images/u4.png";
-import u5 from "../../assets/images/u5.png";
+import u1 from "../../assets/courses/UK.png";
+import u2 from "../../assets/courses/US.png";
+import u3 from "../../assets/courses/canada.png";
+import u4 from "../../assets/courses/australia.png";
+import u5 from "../../assets/courses/germany.png";
 import u6 from "../../assets/images/u6.png";
 import u7 from "../../assets/images/u7.png";
 import u8 from "../../assets/images/u8.png";
@@ -52,74 +52,53 @@ import blueBg from "../../assets/homepage/blue-bg.png";
 
 
 
-const opportunitiesList = [
-  { icon: o1, title: "Hospitals and Clinics" },
-  { icon: o2, title: "Diagnostic Laboratories" },
-  { icon: o3, title: "Medical Research Centers" },
-  { icon: o4, title: "Rehabilitation Centers" },
-  { icon: o5, title: "Medical Equipment Companies" },
-];
-const enrollList = [
-  { icon: o11, title: "Students interested in healthcare and medical fields" },
-  { icon: o22, title: "Individuals seeking stable careers in the healthcare industry" },
-  { icon: o33, title: "Students who want practical medical training" },
-  { icon: o44, title: "Candidates looking for job-oriented professional courses" },
-];
+
 const offeredCourses = [
   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
+    title: "Personalized career guidance",
     description:
-      "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
+      "Tailored advice that matches your personality, values, and career aspirations.",
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
+    title: "Course and university selection",
     description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+      "Finding the perfect academic fit based on your background and future goals.",
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
+    title: "Study abroad counseling",
     description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+      "End-to-end guidance for international education including visa and cultural prep.",
   },
   {
     icon: c4,
-    title: "Dialysis Technology",
+    title: "Career path assessment",
     description:
-      "Specialized training in operating dialysis machines and providing vital care for patients with kidney disorders.",
+      "Scientific aptitude tests and psychological assessments to reveal hidden potential.",
   },
   {
     icon: c5,
-    title: "Hospital Administration",
+    title: "Information about global education opportunities",
     description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
+      "Up-to-date data on worldwide school rankings, facilities, and market trends.",
   },
   {
     icon: c6,
-    title: "Healthcare Assistant Programs",
+    title: "Guidance on admission requirements and eligibility",
     description:
-      "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
+      "Step-by-step help with entry requirements, entrance exams, and interviews.",
   },
 ];
-const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
-];
+
 const universitiesList = [
-  { image: u1, name: "St. Lawrence College" },
-  { image: u2, name: "Northern College" },
-  { image: u3, name: "De Anza College" },
-  { image: u4, name: "San Mateo Colleges" },
-  { image: u5, name: "Sacred Heart University" },
-  { image: u6, name: "Louisiana State University" },
-  { image: u7, name: "Northern Alberta Institute" },
-  { image: u8, name: "North Seattle College" },
+  { image: u1, name: "United States " },
+  { image: u2, name: "United Kingdom" },
+  { image: u3, name: "Canada" },
+  { image: u4, name: "Australia" },
+  { image: u5, name: "Germany" },
+  
 ];
 
 const benefitsList = [

@@ -49,7 +49,32 @@ import Testimonials from '../../component/homepage/Testimonials';
 import CTASection from '../../component/Testprep/CTASection';
 import Footer from '../../component/Footer';
 import blueBg from "../../assets/homepage/blue-bg.png";
+import LORBenefitsSection from "../../component/admission/LORBenefitsSection";
+import ScholarshipBenefitsSection from "../../component/admission/ScholarshipBenefitsSection";
 
+
+
+
+const sopBenefits = [
+  "Reduced education and living expenses",
+  "Increased chances of receiving financial aid",
+  "Expert guidance throughout the application process",
+  "Well-prepared scholarship applications",
+  "Better financial planning for studying abroad",
+];
+
+const recommendationTypes = [
+  {
+    title: "Academic Recommendation Letter",
+    description:
+      "Written by professors, teachers, or academic advisors who can highlight your academic performance and abilities.",
+  },
+  {
+    title: "Professional Recommendation Letter",
+    description:
+      "Written by employers, supervisors, or managers who can speak about your work ethic, skills, and professional achievements.",
+  },
+];
 
 
 const opportunitiesList = [
@@ -149,7 +174,21 @@ const benefitsList = [
   },
 ];
 
+const scholarshipBenefits = [
+  "Safe and reliable housing options",
+  "Accommodation close to universities and public transport",
+  "Affordable living arrangements",
+  "Reduced stress when moving to a new country",
+  "Comfortable environment for studying and living",
+];
 
+const scholarshipTypes = [
+  "University Dormitories",
+  "Shared Apartments",
+  "Private Apartments",
+  "Homestay Options",
+  "Program-Specific Scholarships",
+];
 const AlliedHealthandScience = () => {
   return (
    <>
@@ -163,72 +202,30 @@ const AlliedHealthandScience = () => {
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Student Accommodation "
+  highlight="Support"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Moving to another country for studies involves many important arrangements, and finding the right place to stay is one of them. Our Student Accommodation Support service helps students locate safe, comfortable, and convenient housing options near their universities.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "We guide students in exploring different types of accommodation such as university dormitories, shared apartments, and private housing. Our goal is to ensure that students find a place that offers a supportive living environment while they focus on their academic journey."
   ]}
 />
 
-<CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
-  courses={offeredCourses}
+<CourseHighlights
+        title="Course"
+        highlight="Highlights"
+        subtitle="Experience a comprehensive curriculum designed to build practical skills."
+        highlights={highlightsList}
+      />
+
+<ScholarshipBenefitsSection
+  leftTitle="Benefits of Accommodation "
+  leftHighlight="Support"
+  benefits={scholarshipBenefits}
+  rightTitle="Types of "
+  rightHighlight="Student Accommodation"
+  scholarshipTypes={scholarshipTypes}
 />;
-
-
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
-
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
-/>
-
-
-
-
-
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
-
-
-
 <Testimonials/>
 <CTASection
   bgImage={blueBg}

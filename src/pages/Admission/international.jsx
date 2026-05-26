@@ -104,12 +104,12 @@ const offeredCourses = [
   },
 ];
 const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
+  "Medical emergencies and hospitalization",
+  "Doctor consultations and treatment",
+  "Emergency medical evacuation",
+  "Travel delays or interruptions",
+  "Personal accident coverage",
+  "Loss of baggage or important documents",
 ];
 const universitiesList = [
   { image: u1, name: "St. Lawrence College" },
@@ -122,124 +122,49 @@ const universitiesList = [
   { image: u8, name: "North Seattle College" },
 ];
 
-const benefitsList = [
-  {
-    icon: b1,
-    title: "High Demand in Healthcare Industry",
-    description:
-      "The healthcare sector continues to grow rapidly, creating strong, persistent demand for trained allied health professionals globally.",
-  },
-  {
-    icon: b2,
-    title: "Practical Skill Development",
-    description:
-      "Students gain hands-on training and real-world experience through comprehensive practical sessions and internships.",
-  },
-  {
-    icon: b3,
-    title: "Diverse Career Opportunities",
-    description:
-      "Allied health professionals can choose to work in hospitals, laboratories, diagnostic centers, and specialized healthcare institutions.",
-  },
-  {
-    icon: b4,
-    title: "Opportunities in India and Abroad",
-    description:
-      "Qualified healthcare professionals have exceptional opportunities to work, migrate, and establish careers in various countries around the world.",
-  },
-];
+
 
 
 const AlliedHealthandScience = () => {
   return (
-   <>
-   <Navbar/>
-   <CoursesHero
-  title="Stay Protected with International Student Insurance"
-  description="Secure your health and well-being while studying abroad with reliable international student insurance coverage."
-  buttonText="Book Free Counselling"
-  buttonLink="/contact"
-  image={heroImage}
-/>
-<ProgramInfoSection
-  image={programImage}
-  title="About the"
-  highlight="Program"
-  description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    <>
+      <Navbar />
+      <CoursesHero
+        title="Stay Protected with International Student Insurance"
+        description="Secure your health and well-being while studying abroad with reliable international student insurance coverage."
+        buttonText="Book Free Counselling"
+        buttonLink="/contact"
+        image={heroImage}
+      />
+      <ProgramInfoSection
+        image={programImage}
+        title="International Student"
+        highlight="Insurance"
+        description={[
+          "Studying abroad is an exciting opportunity, but it also comes with certain responsibilities, including ensuring your health and safety. International Student Insurance provides essential coverage for medical emergencies, hospitalization, travel issues, and other unexpected situations while studying in another country.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
-  ]}
-/>
+          "Many universities and countries require international students to have valid health insurance before beginning their studies. Our team helps students understand different insurance options and choose the best policy that meets university requirements and personal needs."
+        ]}
+      />
 
-<CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
-  courses={offeredCourses}
-/>;
+      <CourseHighlights
+        title="Course"
+        highlight="Highlights"
+        subtitle="Experience a comprehensive curriculum designed to build practical skills."
+        highlights={highlightsList}
+      />
 
-
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
-
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
-/>
-
-
-
-
-
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
-
-
-
-<Testimonials/>
-<CTASection
-  bgImage={blueBg}
-  title="Need Career"
-  highlight="Guidance?"
-  description="Get personalized career advice from our experts and choose the right course to achieve your professional goals."
-  buttonText="Explore Courses"
-  buttonLink="/courses"
-/>
-<Footer/>
-   </>
+<Testimonials />
+      <CTASection
+        bgImage={blueBg}
+        title="Need Career"
+        highlight="Guidance?"
+        description="Get personalized career advice from our experts and choose the right course to achieve your professional goals."
+        buttonText="Explore Courses"
+        buttonLink="/courses"
+      />
+      <Footer />
+    </>
   )
 }
 

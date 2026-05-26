@@ -3,7 +3,7 @@ import Navbar from '../../component/Navbar'
 import CoursesHero from "../../component/Courses/CoursesHero";
 import ProgramInfoSection from "../../component/Courses/ProgramInfoSection";
 import CoursesOffered from "../../component/Courses/CoursesOffered";
-import CourseHighlights from "../../component/Courses/CourseHighlights";
+
 import CareerOpportunities from "../../component/Courses/CareerOpportunities";
 import TopUniversities from "../../component/Courses/TopUniversities";
 import BenefitsSection from "../../component/Courses/BenefitsSection";
@@ -49,6 +49,7 @@ import Testimonials from '../../component/homepage/Testimonials';
 import CTASection from '../../component/Testprep/CTASection';
 import Footer from '../../component/Footer';
 import blueBg from "../../assets/homepage/blue-bg.png";
+import CourseHighlights from "../../component/Courses/CourseHighlights";
 
 
 
@@ -104,12 +105,12 @@ const offeredCourses = [
   },
 ];
 const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
+  "Guidance on education loan options",
+  "Assistance in choosing the right bank or financial institution",
+  "Support with loan application and documentation",
+  "Information about loan eligibility and requirements",
+  "Guidance on repayment plans and financial planning",
+  "Assistance with approval and disbursement process",
 ];
 const universitiesList = [
   { image: u1, name: "St. Lawrence College" },
@@ -172,60 +173,24 @@ const AlliedHealthandScience = () => {
   ]}
 />
 
-<CoursesOffered
-  title="What We "
-  highlight="Help With"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
-  courses={offeredCourses}
-/>;
 
 
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
-
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
+<CourseHighlights
+  title="Course"
+  highlight="Highlights"
+  subtitle="Experience a comprehensive curriculum designed to build practical skills."
+  highlights={highlightsList}
 />
 
 
 
 
 
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
+
+
+
+
+
 
 
 

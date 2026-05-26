@@ -48,11 +48,11 @@ import blueBg from "../../assets/homepage/blue-bg.png";
 
 
 const opportunitiesList = [
-  { icon: o1, title: "Hospitals and Clinics" },
-  { icon: o2, title: "Diagnostic Laboratories" },
-  { icon: o3, title: "Medical Research Centers" },
-  { icon: o4, title: "Rehabilitation Centers" },
-  { icon: o5, title: "Medical Equipment Companies" },
+  { icon: o1, title: "Legal Practice and Advocacy" },
+  { icon: o2, title: "Corporate Legal Departments" },
+  { icon: o3, title: "Judiciary and Public Service" },
+  { icon: o4, title: "Legal Consulting" },
+  { icon: o5, title: "Compliance and Regulatory Roles" },
 ];
 const enrollList = [
   { icon: o11, title: "Students interested in healthcare and medical fields" },
@@ -63,21 +63,21 @@ const enrollList = [
 const offeredCourses = [
   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
+    title: "Strong Professional Career",
     description:
-      "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
+      "Law graduates have opportunities to work in legal practice, corporate sectors, and public service.",
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
+    title: "Develop Critical Thinking Skills",
     description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+      "Legal education enhances analytical thinking, reasoning, and decision-making abilities.",
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
+    title: "Diverse Career Paths",
     description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+      "Law professionals can work in courts, corporations, government organizations, and international institutions.",
   },
   {
     icon: c4,
@@ -87,60 +87,46 @@ const offeredCourses = [
   },
   {
     icon: c5,
-    title: "Hospital Administration",
+    title: "Opportunities for Higher Studies",
     description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
+      "Law provides a strong foundation for advanced legal education and specialized legal careers.",
   },
-  {
-    icon: c6,
-    title: "Healthcare Assistant Programs",
-    description:
-      "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
-  },
+  
 ];
 const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
+  "Comprehensive legal curriculum",
+  " Case study and legal research training",
+  "Guidance from experienced legal professionals",
+  "Development of analytical and critical thinking skills",
+  "Exposure to legal procedures and documentation",
+  "Career guidance for legal professions",
 ];
-const universitiesList = [
-  { image: u1, name: "St. Lawrence College" },
-  { image: u2, name: "Northern College" },
-  { image: u3, name: "De Anza College" },
-  { image: u4, name: "San Mateo Colleges" },
-  { image: u5, name: "Sacred Heart University" },
-  { image: u6, name: "Louisiana State University" },
-  { image: u7, name: "Northern Alberta Institute" },
-  { image: u8, name: "North Seattle College" },
-];
+
 
 const benefitsList = [
   {
     icon: b1,
-    title: "High Demand in Healthcare Industry",
+    title: "Strong Professional Career",
     description:
-      "The healthcare sector continues to grow rapidly, creating strong, persistent demand for trained allied health professionals globally.",
+      "Law graduates have opportunities to work in legal practice, corporate sectors, and public service.",
   },
   {
     icon: b2,
-    title: "Practical Skill Development",
+    title: "Develop Critical Thinking Skills",
     description:
-      "Students gain hands-on training and real-world experience through comprehensive practical sessions and internships.",
+      "Legal education enhances analytical thinking, reasoning, and decision-making abilities.",
   },
   {
     icon: b3,
-    title: "Diverse Career Opportunities",
+    title: "Diverse Career Paths",
     description:
-      "Allied health professionals can choose to work in hospitals, laboratories, diagnostic centers, and specialized healthcare institutions.",
+      "Law professionals can work in courts, corporations, government organizations, and international institutions.",
   },
   {
     icon: b4,
-    title: "Opportunities in India and Abroad",
+    title: "Opportunities for Higher Studies",
     description:
-      "Qualified healthcare professionals have exceptional opportunities to work, migrate, and establish careers in various countries around the world.",
+      "Law provides a strong foundation for advanced legal education and specialized legal careers.",
   },
 ];
 
@@ -150,8 +136,8 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Build a Career in Healthcare & Medical Sciences"
-  description="Start your journey in the healthcare industry with our Allied Health and Science courses designed to provide practical knowledge, professional training, and strong career opportunities."
+  title="Build a Career in Law and Justice"
+  description="Pursue your passion for justice and legal studies with programs designed to develop strong analytical, research, and advocacy skills for a successful legal career."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
@@ -161,16 +147,16 @@ const AlliedHealthandScience = () => {
   title="About the"
   highlight="Program"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Law programs focus on understanding legal systems, regulations, and the principles of justice that govern society. These courses provide students with in-depth knowledge of legal frameworks, critical thinking skills, and the ability to analyze complex legal issues.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Students gain insights into various areas of law, including civil law, criminal law, corporate law, and international law, preparing them for diverse legal careers."
   ]}
 />
 
 <CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  title="Areas of "
+  highlight="Study"
+  subtitle="Our law programs cover important legal disciplines such as:"
   courses={offeredCourses}
 />;
 
@@ -184,7 +170,7 @@ const AlliedHealthandScience = () => {
 <CareerOpportunities
   title="Career"
   highlight="Opportunities"
-  description="Graduates of Allied Health and Science programs can pursue careers in various healthcare sectors. These roles play a vital part in supporting doctors and healthcare professionals in patient care and medical services."
+  description="Graduates in law can pursue careers in various sectors, including:"
   opportunities={opportunitiesList}
   enrollTitle="Who Should"
   enrollHighlight="Enroll?"
@@ -192,17 +178,12 @@ const AlliedHealthandScience = () => {
   enrollList={enrollList}
 />
 
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
+
 
 <BenefitsSection
-  title="Benefits of Allied Health"
-  highlight="Courses"
-  subtitle="A career in allied health offers stability, growth, and the opportunity to make a real difference."
+  title="Benefits of Studying "
+  highlight="Information Technology"
+ 
   benefits={benefitsList}
 />
 

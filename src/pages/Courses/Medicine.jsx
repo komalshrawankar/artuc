@@ -48,11 +48,11 @@ import blueBg from "../../assets/homepage/blue-bg.png";
 
 
 const opportunitiesList = [
-  { icon: o1, title: "Hospitals and Clinics" },
-  { icon: o2, title: "Diagnostic Laboratories" },
-  { icon: o3, title: "Medical Research Centers" },
-  { icon: o4, title: "Rehabilitation Centers" },
-  { icon: o5, title: "Medical Equipment Companies" },
+  { icon: o1, title: "General Physician" },
+  { icon: o2, title: "Surgeon" },
+  { icon: o3, title: "Dentist" },
+  { icon: o4, title: "Pharmacist" },
+  { icon: o5, title: "Medical Researcher" },
 ];
 const enrollList = [
   { icon: o11, title: "Students interested in healthcare and medical fields" },
@@ -63,84 +63,58 @@ const enrollList = [
 const offeredCourses = [
   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
+    title: "Globally Recognized Degree",
     description:
-      "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
+      "Earn a medical qualification that is respected and recognized worldwide.",
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
+    title: "Advanced Medical Training",
     description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+      "Learn using modern laboratories, advanced technology, and innovative teaching methods.",
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
+    title: "Better Career Opportunities",
     description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+      "Access a wide range of global job opportunities in hospitals, research centers, and healthcare organizations.",
   },
-  {
-    icon: c4,
-    title: "Dialysis Technology",
-    description:
-      "Specialized training in operating dialysis machines and providing vital care for patients with kidney disorders.",
-  },
-  {
-    icon: c5,
-    title: "Hospital Administration",
-    description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
-  },
-  {
-    icon: c6,
-    title: "Healthcare Assistant Programs",
-    description:
-      "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
-  },
+ 
 ];
 const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
+  "Globally recognized medical degrees",
+  "Practical training in hospitals and clinics",
+  "Access to modern laboratories and research centers",
+  "Opportunities to work with experienced medical professionals",
+  "Exposure to international healthcare systems",
   "Career guidance and job support",
 ];
-const universitiesList = [
-  { image: u1, name: "St. Lawrence College" },
-  { image: u2, name: "Northern College" },
-  { image: u3, name: "De Anza College" },
-  { image: u4, name: "San Mateo Colleges" },
-  { image: u5, name: "Sacred Heart University" },
-  { image: u6, name: "Louisiana State University" },
-  { image: u7, name: "Northern Alberta Institute" },
-  { image: u8, name: "North Seattle College" },
-];
+
 
 const benefitsList = [
   {
     icon: b1,
-    title: "High Demand in Healthcare Industry",
+    title: "Globally Recognized Degree",
     description:
-      "The healthcare sector continues to grow rapidly, creating strong, persistent demand for trained allied health professionals globally.",
+      "Earn a medical qualification that is respected and recognized worldwide.",
   },
   {
     icon: b2,
-    title: "Practical Skill Development",
+    title: "Advanced Medical Training",
     description:
-      "Students gain hands-on training and real-world experience through comprehensive practical sessions and internships.",
+      "Learn using modern laboratories, advanced technology, and innovative teaching methods.",
   },
   {
     icon: b3,
-    title: "Diverse Career Opportunities",
+    title: "Better Career Opportunities",
     description:
-      "Allied health professionals can choose to work in hospitals, laboratories, diagnostic centers, and specialized healthcare institutions.",
+      "Access a wide range of global job opportunities in hospitals, research centers, and healthcare organizations.",
   },
   {
     icon: b4,
-    title: "Opportunities in India and Abroad",
+    title: "International Clinical Exposure",
     description:
-      "Qualified healthcare professionals have exceptional opportunities to work, migrate, and establish careers in various countries around the world.",
+      "Gain hands-on experience in hospitals and healthcare facilities across different countries.",
   },
 ];
 
@@ -148,10 +122,10 @@ const benefitsList = [
 const AlliedHealthandScience = () => {
   return (
    <>
-   <Navbar/>
-   <CoursesHero
-  title="Build a Career in Healthcare & Medical Sciences"
-  description="Start your journey in the healthcare industry with our Allied Health and Science courses designed to provide practical knowledge, professional training, and strong career opportunities."
+  <Navbar/>
+  <CoursesHero
+  title="Study Medicine Abroad & Build a Global Healthcare Career"
+  description="Pursue world-class medical education with advanced training, modern facilities, and international exposure. Start your journey to becoming a skilled healthcare professional at top universities around the world."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
@@ -161,16 +135,16 @@ const AlliedHealthandScience = () => {
   title="About the"
   highlight="Program"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Studying Medicine abroad provides students with access to world-class medical education, advanced research facilities, and hands-on clinical training. Many international universities offer comprehensive medical programs designed to build strong knowledge in human health, disease prevention, diagnosis, and patient care. Students benefit from modern laboratories, experienced faculty, and practical exposure in well-equipped hospitals.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Pursuing a medical degree internationally also allows students to experience different healthcare systems and gain valuable global perspectives. With a strong focus on research, innovation, and clinical practice, medical programs abroad prepare students to become skilled healthcare professionals capable of making a positive impact on society."
   ]}
 />
 
 <CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  title="Popular Medicine "
+  highlight="Programs"
+ 
   courses={offeredCourses}
 />;
 
@@ -184,7 +158,7 @@ const AlliedHealthandScience = () => {
 <CareerOpportunities
   title="Career"
   highlight="Opportunities"
-  description="Graduates of Allied Health and Science programs can pursue careers in various healthcare sectors. These roles play a vital part in supporting doctors and healthcare professionals in patient care and medical services."
+  description="Graduates in Medicine can pursue a variety of rewarding careers, including:"
   opportunities={opportunitiesList}
   enrollTitle="Who Should"
   enrollHighlight="Enroll?"
@@ -192,17 +166,12 @@ const AlliedHealthandScience = () => {
   enrollList={enrollList}
 />
 
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
+
 
 <BenefitsSection
-  title="Benefits of Allied Health"
+  title="Benefits of Studying Medicine"
   highlight="Courses"
-  subtitle="A career in allied health offers stability, growth, and the opportunity to make a real difference."
+ 
   benefits={benefitsList}
 />
 
