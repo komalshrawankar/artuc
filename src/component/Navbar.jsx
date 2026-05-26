@@ -172,7 +172,7 @@ const Navbar = () => {
                 onMouseEnter={() => setOpenDropdown("courses")}
               >
                 <a
-                  href="/courses"
+                  href="#"
                   className="nav-link"
                   style={isCourseActive ? activeLinkStyle : linkStyle}
                   onClick={(e) => {
@@ -193,7 +193,7 @@ const Navbar = () => {
                 onMouseEnter={() => setOpenDropdown("study")}
               >
                 <a
-                  href="/study-abroad"
+                  href="#"
                   className="nav-link"
                   style={isStudyActive ? activeLinkStyle : linkStyle}
                   onClick={(e) => {
