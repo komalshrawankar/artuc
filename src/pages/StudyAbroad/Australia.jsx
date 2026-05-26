@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import Navbar from '../../component/Navbar'
 import CoursesHero from "../../component/Courses/CoursesHero";
@@ -49,6 +50,8 @@ import Testimonials from '../../component/homepage/Testimonials';
 import CTASection from '../../component/Testprep/CTASection';
 import Footer from '../../component/Footer';
 import blueBg from "../../assets/homepage/blue-bg.png";
+import TopUni from '../../component/StudyAbroad/TopUni';
+import WorkOpportunities from '../../component/StudyAbroad/WorkOpportunities';
 
 
 
@@ -230,6 +233,11 @@ const AlliedHealthandScience = () => {
 
 
 <Testimonials/>
+
+<TopUni />
+
+<WorkOpportunities />
+
 <CTASection
   bgImage={blueBg}
   title="Need Career"
