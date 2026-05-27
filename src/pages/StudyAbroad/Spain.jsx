@@ -16,8 +16,8 @@ import abroad from "../../assets/admission/plane.png";
 import graduate from "../../assets/admission/3.png";
 import work from "../../assets/admission/work.png";
 import img from "../../assets/admission/info-img.png";
-import heroImage from "../../assets/admission/career-bg.png";
-import programImage from "../../assets/admission/career-p.png";
+import heroImage from "../../assets/studyabroad/spain1.png";
+import programImage from "../../assets/studyabroad/spain2.png";
 import c1 from "../../assets/images/c1.png";
 import c2 from "../../assets/images/c2.png";
 import c3 from "../../assets/images/c3.png";
@@ -70,86 +70,42 @@ const enrollList = [
 const offeredCourses = [
   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
+    title: "Globally Recognized Universities",
     description:
-      "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
+      "Study at internationally respected universities and programs.",
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
+    title: "Affordable Tuition Fees",
     description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+      "Lower education costs compared to many European countries.",
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
+    title: "English-Taught Programs",
     description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+      "Choose from a growing range of programs taught in English.",
   },
   {
     icon: c4,
-    title: "Dialysis Technology",
+    title: "Rich Cultural Experience",
     description:
-      "Specialized training in operating dialysis machines and providing vital care for patients with kidney disorders.",
+      "Enjoy a vibrant lifestyle and cultural heritage.",
   },
   {
     icon: c5,
-    title: "Hospital Administration",
+    title: "Internship Opportunities",
     description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
+      "Gain practical experience through internships.",
   },
   {
     icon: c6,
-    title: "Healthcare Assistant Programs",
+    title: "Travel Across Europe",
     description:
-      "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
+      "Explore and travel easily across European countries.",
   },
-];
-const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
-];
-const universitiesList = [
-  { image: u1, name: "St. Lawrence College" },
-  { image: u2, name: "Northern College" },
-  { image: u3, name: "De Anza College" },
-  { image: u4, name: "San Mateo Colleges" },
-  { image: u5, name: "Sacred Heart University" },
-  { image: u6, name: "Louisiana State University" },
-  { image: u7, name: "Northern Alberta Institute" },
-  { image: u8, name: "North Seattle College" },
 ];
 
-const benefitsList = [
-  {
-    icon: b1,
-    title: "High Demand in Healthcare Industry",
-    description:
-      "The healthcare sector continues to grow rapidly, creating strong, persistent demand for trained allied health professionals globally.",
-  },
-  {
-    icon: b2,
-    title: "Practical Skill Development",
-    description:
-      "Students gain hands-on training and real-world experience through comprehensive practical sessions and internships.",
-  },
-  {
-    icon: b3,
-    title: "Diverse Career Opportunities",
-    description:
-      "Allied health professionals can choose to work in hospitals, laboratories, diagnostic centers, and specialized healthcare institutions.",
-  },
-  {
-    icon: b4,
-    title: "Opportunities in India and Abroad",
-    description:
-      "Qualified healthcare professionals have exceptional opportunities to work, migrate, and establish careers in various countries around the world.",
-  },
-];
 
 
 const AlliedHealthandScience = () => {
@@ -157,81 +113,29 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Find the Right Career Path with Expert Guidance"
-  description="Get personalized career counseling to discover the best courses, universities, and opportunities that match your interests, skills, and future goals."
+  title="Study in Spain and Experience World-Class Education"
+  description="Discover high-quality education, rich culture, and exciting career opportunities while studying in one of Europe’s most vibrant countries."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Study in the "
+  highlight="Spain"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Spain is becoming an increasingly popular destination for international students due to its high-quality education system, cultural diversity, and welcoming environment. The country offers a wide range of undergraduate and postgraduate programs in fields such as business, tourism, engineering, arts, and international relations.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Spanish universities combine strong academic learning with practical experience and research opportunities. Students studying in Spain enjoy modern campuses, a vibrant lifestyle, and the chance to experience the country’s rich history, culture, and traditions"
   ]}
 />
 
 <CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  title="Why Study in "
+  highlight="Spain"
+ 
   courses={offeredCourses}
 />;
-
-
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
-
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
-/>
-
-
-
-
-
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
-
-
-
-<Testimonials/>
 
 <TopUni />
 

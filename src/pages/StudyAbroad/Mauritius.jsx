@@ -16,8 +16,8 @@ import abroad from "../../assets/admission/plane.png";
 import graduate from "../../assets/admission/3.png";
 import work from "../../assets/admission/work.png";
 import img from "../../assets/admission/info-img.png";
-import heroImage from "../../assets/admission/career-bg.png";
-import programImage from "../../assets/admission/career-p.png";
+import heroImage from "../../assets/studyabroad/mauritius1.png";
+import programImage from "../../assets/studyabroad/mauritius2.png";
 import c1 from "../../assets/images/c1.png";
 import c2 from "../../assets/images/c2.png";
 import c3 from "../../assets/images/c3.png";
@@ -157,81 +157,32 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Find the Right Career Path with Expert Guidance"
-  description="Get personalized career counseling to discover the best courses, universities, and opportunities that match your interests, skills, and future goals."
+  title="Study in Mauritius and Experience Quality Education in a Beautiful Island Nation"
+  description="Gain an internationally recognized education while enjoying a multicultural environment and modern learning facilities."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Study in the "
+  highlight="Mauritius"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Mauritius has emerged as a growing education hub in the Indian Ocean region, attracting students from around the world. The country offers internationally recognized programs in collaboration with universities from the UK, France, and Australia. Students benefit from a high standard of education, modern infrastructure, and a peaceful environment ideal for learning.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "The country provides a wide range of undergraduate and postgraduate programs across fields such as business, information technology, hospitality, finance, and engineering. With English widely used in education and daily life, international students can easily adapt to studying in Mauritius."
   ]}
 />
 
 <CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  title="Why Study in "
+  highlight="Mauritius"
+ 
   courses={offeredCourses}
 />;
 
 
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
 
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
-/>
-
-
-
-
-
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
-
-
-
-<Testimonials/>
 
 <TopUni />
 

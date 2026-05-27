@@ -16,8 +16,8 @@ import abroad from "../../assets/admission/plane.png";
 import graduate from "../../assets/admission/3.png";
 import work from "../../assets/admission/work.png";
 import img from "../../assets/admission/info-img.png";
-import heroImage from "../../assets/admission/career-bg.png";
-import programImage from "../../assets/admission/career-p.png";
+import heroImage from "../../assets/studyabroad/vietnam1.png";
+import programImage from "../../assets/studyabroad/vietnam2.png";
 import c1 from "../../assets/images/c1.png";
 import c2 from "../../assets/images/c2.png";
 import c3 from "../../assets/images/c3.png";
@@ -68,41 +68,41 @@ const enrollList = [
   { icon: o44, title: "Candidates looking for job-oriented professional courses" },
 ];
 const offeredCourses = [
-  {
+   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
+    title: "Globally Recognized Universities",
     description:
-      "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
+      "Earn internationally respected degrees.",
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
+    title: "Affordable Education",
     description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+      "Lower tuition fees and living expenses.",
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
+    title: "English-Taught Courses",
     description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+      "Choose from a wide range of programs in English.",
   },
   {
     icon: c4,
-    title: "Dialysis Technology",
+    title: "Student-Friendly Cities",
     description:
-      "Specialized training in operating dialysis machines and providing vital care for patients with kidney disorders.",
+      "Live and study in safe and welcoming cities.",
   },
   {
     icon: c5,
-    title: "Hospital Administration",
+    title: "Growing Economy",
     description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
+      "Study in a country with expanding career opportunities.",
   },
   {
     icon: c6,
-    title: "Healthcare Assistant Programs",
+    title: "Modern Universities",
     description:
-      "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
+      "Study with advanced learning facilities and campuses.",
   },
 ];
 const highlightsList = [
@@ -157,81 +157,32 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Find the Right Career Path with Expert Guidance"
-  description="Get personalized career counseling to discover the best courses, universities, and opportunities that match your interests, skills, and future goals."
+  title="Study in Vietnam and Experience Dynamic Asian Education"
+  description="Gain quality education while exploring a fast-growing economy and vibrant cultural environment in Southeast Asia."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Study in "
+  highlight=" Vietnam"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Vietnam is becoming a growing education destination in Asia, offering affordable education, modern campuses, and a rapidly developing academic environment. Many universities in Vietnam collaborate with international institutions to provide globally recognized programs in fields such as business, engineering, information technology, and hospitality.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Students studying in Vietnam benefit from a dynamic economy, diverse culture, and growing international student community. The country also offers opportunities to gain practical knowledge and industry exposure in emerging markets."
   ]}
 />
 
 <CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  title="Why Study in "
+  highlight="Vietnam?"
+ 
   courses={offeredCourses}
 />;
 
 
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
 
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
-/>
-
-
-
-
-
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
-
-
-
-<Testimonials/>
 
 <TopUni />
 

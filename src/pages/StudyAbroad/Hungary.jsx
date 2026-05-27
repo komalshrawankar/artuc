@@ -16,8 +16,8 @@ import abroad from "../../assets/admission/plane.png";
 import graduate from "../../assets/admission/3.png";
 import work from "../../assets/admission/work.png";
 import img from "../../assets/admission/info-img.png";
-import heroImage from "../../assets/admission/career-bg.png";
-import programImage from "../../assets/admission/career-p.png";
+import heroImage from "../../assets/studyabroad/hyngary1.png";
+import programImage from "../../assets/studyabroad/hungary2.png";
 import c1 from "../../assets/images/c1.png";
 import c2 from "../../assets/images/c2.png";
 import c3 from "../../assets/images/c3.png";
@@ -127,27 +127,27 @@ const universitiesList = [
 const benefitsList = [
   {
     icon: b1,
-    title: "High Demand in Healthcare Industry",
+    title: "Globally Recognized Universities",
     description:
-      "The healthcare sector continues to grow rapidly, creating strong, persistent demand for trained allied health professionals globally.",
+      "Earn internationally respected degrees.",
   },
   {
     icon: b2,
-    title: "Practical Skill Development",
+    title: "Affordable Education",
     description:
-      "Students gain hands-on training and real-world experience through comprehensive practical sessions and internships.",
+      "Lower tuition fees and living expenses.",
   },
   {
     icon: b3,
-    title: "Diverse Career Opportunities",
+    title: "English-Taught Courses",
     description:
-      "Allied health professionals can choose to work in hospitals, laboratories, diagnostic centers, and specialized healthcare institutions.",
+      "Choose from a wide range of programs in English.",
   },
   {
     icon: b4,
-    title: "Opportunities in India and Abroad",
+    title: "Rich Culture & History",
     description:
-      "Qualified healthcare professionals have exceptional opportunities to work, migrate, and establish careers in various countries around the world.",
+      "Experience historic cities and vibrant culture.",
   },
 ];
 
@@ -157,81 +157,32 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Find the Right Career Path with Expert Guidance"
-  description="Get personalized career counseling to discover the best courses, universities, and opportunities that match your interests, skills, and future goals."
+  title="Study in Hungary and Access Quality European Education"
+  description="Gain a globally recognized degree while studying in one of Europe’s most affordable and student-friendly countries."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Study in "
+  highlight="Hungary"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Hungary is an increasingly popular destination for international students seeking high-quality education in Europe at affordable costs. The country offers a wide range of undergraduate, postgraduate, and doctoral programs across fields such as medicine, engineering, business, and information technology.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Hungarian universities are known for their strong academic tradition, research opportunities, and modern teaching methods. Students also benefit from a multicultural environment and the chance to explore Europe while studying."
   ]}
 />
 
 <CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  title="Why Study in "
+  highlight="Hungary?"
+  
   courses={offeredCourses}
 />;
 
 
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
 
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
-/>
-
-
-
-
-
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
-
-
-
-<Testimonials/>
 
 <TopUni />
 

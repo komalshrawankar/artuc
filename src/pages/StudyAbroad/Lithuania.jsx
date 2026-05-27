@@ -16,8 +16,8 @@ import abroad from "../../assets/admission/plane.png";
 import graduate from "../../assets/admission/3.png";
 import work from "../../assets/admission/work.png";
 import img from "../../assets/admission/info-img.png";
-import heroImage from "../../assets/admission/career-bg.png";
-import programImage from "../../assets/admission/career-p.png";
+import heroImage from "../../assets/studyabroad/lithunia1.png";
+import programImage from "../../assets/studyabroad/lithunia2.png";
 import c1 from "../../assets/images/c1.png";
 import c2 from "../../assets/images/c2.png";
 import c3 from "../../assets/images/c3.png";
@@ -157,81 +157,32 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Find the Right Career Path with Expert Guidance"
-  description="Get personalized career counseling to discover the best courses, universities, and opportunities that match your interests, skills, and future goals."
+  title="Study in Lithuania and Experience Modern European Education"
+  description="Access high-quality education, affordable living, and globally recognized degrees in one of Europe’s emerging study destinations."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Study in "
+  highlight="Lithuania"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Lithuania is becoming an increasingly popular destination for international students seeking quality European education at affordable costs. The country offers a variety of undergraduate and postgraduate programs in fields such as business, engineering, information technology, and health sciences.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Lithuanian universities focus on innovative learning, research opportunities, and practical skills, helping students prepare for successful international careers. Students also benefit from modern campuses, supportive learning environments, and a vibrant student community."
   ]}
 />
 
 <CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  title="Why Study in "
+  highlight="Lithuania?"
+ 
   courses={offeredCourses}
 />;
 
 
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
 
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
-/>
-
-
-
-
-
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
-
-
-
-<Testimonials/>
 
 <TopUni />
 

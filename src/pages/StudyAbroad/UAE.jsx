@@ -16,8 +16,8 @@ import abroad from "../../assets/admission/plane.png";
 import graduate from "../../assets/admission/3.png";
 import work from "../../assets/admission/work.png";
 import img from "../../assets/admission/info-img.png";
-import heroImage from "../../assets/admission/career-bg.png";
-import programImage from "../../assets/admission/career-p.png";
+import heroImage from "../../assets/studyabroad/uae1.png";
+import programImage from "../../assets/studyabroad/uae2.png";
 import c1 from "../../assets/images/c1.png";
 import c2 from "../../assets/images/c2.png";
 import c3 from "../../assets/images/c3.png";
@@ -70,39 +70,39 @@ const enrollList = [
 const offeredCourses = [
   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
+    title: "Global University Campuses",
     description:
-      "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
+      "Home to campuses of internationally recognized universities.",
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
+    title: "Modern Learning Facilities",
     description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+      "Study with advanced infrastructure and technology.",
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
+    title: "Multicultural Environment",
     description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+      "Experience a diverse international student community.",
   },
   {
     icon: c4,
-    title: "Dialysis Technology",
+    title: "Strong Industry Connections",
     description:
-      "Specialized training in operating dialysis machines and providing vital care for patients with kidney disorders.",
+      "Benefit from links with global businesses and industries.",
   },
   {
     icon: c5,
-    title: "Hospital Administration",
+    title: "English-Taught Programs",
     description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
+      "Choose from a wide range of programs in English.",
   },
   {
     icon: c6,
-    title: "Healthcare Assistant Programs",
+    title: "Career & Internship Opportunities",
     description:
-      "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
+      "Access excellent internship and career prospects.",
   },
 ];
 const highlightsList = [
@@ -156,82 +156,33 @@ const AlliedHealthandScience = () => {
   return (
    <>
    <Navbar/>
-   <CoursesHero
-  title="Find the Right Career Path with Expert Guidance"
-  description="Get personalized career counseling to discover the best courses, universities, and opportunities that match your interests, skills, and future goals."
+  <CoursesHero
+  title="Study in the UAE and Experience Global Education"
+  description="Gain an internationally recognized degree while studying in one of the world’s fastest-growing education and business hubs."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Study in "
+  highlight="UAE"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "The United Arab Emirates has become a major education hub in the Middle East, attracting students from around the world. With campuses of internationally recognized universities and modern learning facilities, the UAE provides high-quality education across various fields.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Students studying in the UAE benefit from industry-focused programs, global exposure, and strong connections with international companies. The country also offers a safe and multicultural environment, making it an attractive destination for international education."
   ]}
 />
 
 <CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  title="Why Study in "
+  highlight="UAE?"
+ 
   courses={offeredCourses}
 />;
 
 
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
 
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
-/>
-
-
-
-
-
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
-
-
-
-<Testimonials/>
 
 <TopUni />
 

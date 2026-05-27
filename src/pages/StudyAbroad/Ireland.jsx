@@ -16,8 +16,8 @@ import abroad from "../../assets/admission/plane.png";
 import graduate from "../../assets/admission/3.png";
 import work from "../../assets/admission/work.png";
 import img from "../../assets/admission/info-img.png";
-import heroImage from "../../assets/admission/career-bg.png";
-import programImage from "../../assets/admission/career-p.png";
+import heroImage from "../../assets/studyabroad/ireland1.png";
+import programImage from "../../assets/studyabroad/ireland2.png";
 import c1 from "../../assets/images/c1.png";
 import c2 from "../../assets/images/c2.png";
 import c3 from "../../assets/images/c3.png";
@@ -70,86 +70,42 @@ const enrollList = [
 const offeredCourses = [
   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
+    title: "Globally Recognized Universities",
     description:
-      "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
+      "Earn internationally respected degrees and qualifications.",
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
+    title: "Quality Education & Research",
     description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+      "Access advanced learning and research opportunities.",
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
+    title: "Strong Industry Presence",
     description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+      "Study near leading global tech and business companies.",
   },
   {
     icon: c4,
-    title: "Dialysis Technology",
+    title: "English-Taught Programs",
     description:
-      "Specialized training in operating dialysis machines and providing vital care for patients with kidney disorders.",
+      "Choose from a wide range of programs in English.",
   },
   {
     icon: c5,
-    title: "Hospital Administration",
+    title: "Post-study Career",
     description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
+      "Benefit from generous post-study work opportunities to kickstart your global career.",
   },
   {
     icon: c6,
-    title: "Healthcare Assistant Programs",
+    title: "Safe Environments",
     description:
-      "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
+      "Live and study in some of the safest and most student-friendly cities on the planet.",
   },
-];
-const highlightsList = [
-  "Industry-relevant healthcare training",
-  "Practical learning and lab sessions",
-  "Experienced faculty and trainers",
-  "Modern learning facilities",
-  "Internship and practical exposure",
-  "Career guidance and job support",
-];
-const universitiesList = [
-  { image: u1, name: "St. Lawrence College" },
-  { image: u2, name: "Northern College" },
-  { image: u3, name: "De Anza College" },
-  { image: u4, name: "San Mateo Colleges" },
-  { image: u5, name: "Sacred Heart University" },
-  { image: u6, name: "Louisiana State University" },
-  { image: u7, name: "Northern Alberta Institute" },
-  { image: u8, name: "North Seattle College" },
 ];
 
-const benefitsList = [
-  {
-    icon: b1,
-    title: "High Demand in Healthcare Industry",
-    description:
-      "The healthcare sector continues to grow rapidly, creating strong, persistent demand for trained allied health professionals globally.",
-  },
-  {
-    icon: b2,
-    title: "Practical Skill Development",
-    description:
-      "Students gain hands-on training and real-world experience through comprehensive practical sessions and internships.",
-  },
-  {
-    icon: b3,
-    title: "Diverse Career Opportunities",
-    description:
-      "Allied health professionals can choose to work in hospitals, laboratories, diagnostic centers, and specialized healthcare institutions.",
-  },
-  {
-    icon: b4,
-    title: "Opportunities in India and Abroad",
-    description:
-      "Qualified healthcare professionals have exceptional opportunities to work, migrate, and establish careers in various countries around the world.",
-  },
-];
 
 
 const AlliedHealthandScience = () => {
@@ -157,81 +113,32 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Find the Right Career Path with Expert Guidance"
-  description="Get personalized career counseling to discover the best courses, universities, and opportunities that match your interests, skills, and future goals."
+  title="Study in Ireland and Build a Global Career"
+  description="Experience high-quality education, innovative research, and excellent career opportunities in one of Europe’s leading study destinations."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Study in "
+  highlight="Ireland"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Ireland has become a popular destination for international students due to its high academic standards, modern education system, and strong global reputation. The country offers a wide range of undergraduate and postgraduate programs in fields such as business, engineering, information technology, healthcare, and data science.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Irish universities focus on research, innovation, and practical learning, helping students develop the skills required in today’s competitive global job market. Ireland is also home to many multinational companies, providing students with excellent internship and career opportunities."
   ]}
 />
 
 <CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  title="Why Study in "
+  highlight="Ireland?"
+  
   courses={offeredCourses}
 />;
 
 
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
 
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
-/>
-
-
-
-
-
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
-
-
-
-<Testimonials/>
 
 <TopUni />
 

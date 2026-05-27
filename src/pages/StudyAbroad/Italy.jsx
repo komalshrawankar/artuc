@@ -16,8 +16,8 @@ import abroad from "../../assets/admission/plane.png";
 import graduate from "../../assets/admission/3.png";
 import work from "../../assets/admission/work.png";
 import img from "../../assets/admission/info-img.png";
-import heroImage from "../../assets/admission/career-bg.png";
-import programImage from "../../assets/admission/career-p.png";
+import heroImage from "../../assets/studyabroad/italy1.png";
+import programImage from "../../assets/studyabroad/italy2.png";
 import c1 from "../../assets/images/c1.png";
 import c2 from "../../assets/images/c2.png";
 import c3 from "../../assets/images/c3.png";
@@ -70,21 +70,21 @@ const enrollList = [
 const offeredCourses = [
   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
+    title: "Prestigious Universities",
     description:
-      "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
+      "Home to some of the world’s oldest and most respected institutions.",
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
+    title: "Globally Recognized Degrees",
     description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+      "Earn internationally valued academic qualifications.",
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
+    title: "Affordable Tuition Fees",
     description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+      "Lower study costs compared to many European countries.",
   },
   {
     icon: c4,
@@ -94,15 +94,15 @@ const offeredCourses = [
   },
   {
     icon: c5,
-    title: "Hospital Administration",
+    title: "English-Taught Programs",
     description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
+      "Choose from a wide range of programs in English.",
   },
   {
     icon: c6,
-    title: "Healthcare Assistant Programs",
+    title: "Rich Cultural Environment",
     description:
-      "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
+      "Experience a country full of history and culture.",
   },
 ];
 const highlightsList = [
@@ -157,81 +157,31 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Find the Right Career Path with Expert Guidance"
-  description="Get personalized career counseling to discover the best courses, universities, and opportunities that match your interests, skills, and future goals."
+  title="Study in Italy and Experience World-Class Education"
+  description="Discover top universities, rich cultural heritage, and excellent academic opportunities in one of Europe’s most historic education destinations."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Study in the "
+  highlight="Italy"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Italy is one of the most popular study destinations in Europe, known for its historic universities, strong academic traditions, and diverse study programs. The country offers a wide range of undergraduate and postgraduate programs in fields such as architecture, fashion, engineering, business, and arts.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Italian universities combine traditional academic excellence with modern research and practical learning approaches. Students also get the opportunity to experience Italy’s rich culture, history, and vibrant lifestyle while receiving a globally recognized education."
   ]}
 />
 
 <CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  title="Why Study in "
+  highlight="Italy"
+ 
   courses={offeredCourses}
 />;
 
 
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
-
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
-/>
-
-
-
-
-
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
-
-
-
-<Testimonials/>
 
 <TopUni />
 

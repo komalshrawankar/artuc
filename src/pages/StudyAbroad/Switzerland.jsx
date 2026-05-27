@@ -16,8 +16,8 @@ import abroad from "../../assets/admission/plane.png";
 import graduate from "../../assets/admission/3.png";
 import work from "../../assets/admission/work.png";
 import img from "../../assets/admission/info-img.png";
-import heroImage from "../../assets/admission/career-bg.png";
-import programImage from "../../assets/admission/career-p.png";
+import heroImage from "../../assets/studyabroad/switzerland1.png";
+import programImage from "../../assets/studyabroad/switzerland2.png";
 import c1 from "../../assets/images/c1.png";
 import c2 from "../../assets/images/c2.png";
 import c3 from "../../assets/images/c3.png";
@@ -70,39 +70,33 @@ const enrollList = [
 const offeredCourses = [
   {
     icon: c1,
-    title: "Medical Laboratory Technology (MLT)",
-    description:
-      "Learn to perform complex medical tests to help physicians diagnose, treat, and prevent diseases.",
+    title: "Globally Recognized Universities",
+    description: "Earn internationally respected degrees.",
   },
   {
     icon: c2,
-    title: "Radiology & Imaging Technology",
-    description:
-      "Master the use of medical imaging equipment like X-rays, MRI, and CT scanners for patient diagnosis.",
+    title: "High-Quality Education",
+    description: "Access advanced research and learning facilities.",
   },
   {
     icon: c3,
-    title: "Operation Theatre Technology",
-    description:
-      "Gain expertise in managing operation theatre equipment and assisting surgeons during procedures.",
+    title: "Hospitality & Business Excellence",
+    description: "Strong reputation in hospitality and business studies.",
   },
   {
     icon: c4,
-    title: "Dialysis Technology",
-    description:
-      "Specialized training in operating dialysis machines and providing vital care for patients with kidney disorders.",
+    title: "International Student Community",
+    description: "Experience a diverse and multicultural environment.",
   },
   {
     icon: c5,
-    title: "Hospital Administration",
-    description:
-      "Develop leadership skills to manage hospital operations, healthcare policies, and facility administration.",
+    title: "High Standard of Living",
+    description: "Safe country with excellent quality of life.",
   },
   {
     icon: c6,
-    title: "Healthcare Assistant Programs",
-    description:
-      "Train to provide essential patient care and support nursing staff in hospitals and clinics.",
+    title: "Internship Opportunities",
+    description: "Gain industry experience through internships.",
   },
 ];
 const highlightsList = [
@@ -157,81 +151,32 @@ const AlliedHealthandScience = () => {
    <>
    <Navbar/>
    <CoursesHero
-  title="Find the Right Career Path with Expert Guidance"
-  description="Get personalized career counseling to discover the best courses, universities, and opportunities that match your interests, skills, and future goals."
+  title="Study in Switzerland and Experience Excellence in Education"
+  description="Gain a globally recognized degree while studying in one of the world’s most beautiful and innovative countries."
   buttonText="Book Free Counselling"
   buttonLink="/contact"
   image={heroImage}
 />
 <ProgramInfoSection
   image={programImage}
-  title="About the"
-  highlight="Program"
+  title="Study in "
+  highlight="Switzerland"
   description={[
-    "Allied Health and Science courses focus on training students for important roles in the healthcare sector. These programs combine theoretical knowledge with practical training to prepare students for careers in hospitals, laboratories, clinics, and healthcare organizations.",
+    "Switzerland is one of Europe’s most prestigious education destinations, offering high academic standards, modern campuses, and strong industry connections. The country is particularly known for its excellence in fields such as hospitality management, business, finance, engineering, and international relations.",
 
-    "With the growing demand for skilled healthcare professionals, allied health courses provide excellent career opportunities in the medical and healthcare industry."
+    "Swiss universities focus on practical learning, research, and global exposure, helping students develop the skills required in the international job market. Students also enjoy a high quality of life, safe environment, and stunning natural surroundings."
   ]}
 />
 
 <CoursesOffered
-  title="Courses"
-  highlight="Offered"
-  subtitle="Our Allied Health and Science programs include a variety of specialized courses designed to meet industry demands. These programs provide students with the skills required to work in modern healthcare environments."
+  title="Why Study in "
+  highlight="Switzerland?"
+  
   courses={offeredCourses}
 />;
 
 
-<InfoSection
-  title="Why Career"
-  highlight="Counseling Matters"
-  description="Navigating today’s professional landscape can be overwhelming."
-  image={img}
-  points={[
-    "Avoid confusion and decision paralysis.",
-    "Align interests with professional skills.",
-    "Maximize long-term success.",
-    "Save time and financial resources.",
-  ]}
-/>
 
-<BenefitCards
-  title="Who Can"
-  highlight="Benefit"
-  items={[
-    {
-      image: school,
-      title: "High School Students",
-    },
-    {
-      image: abroad,
-      title: "Students Planning Abroad",
-    },
-    {
-      image: graduate,
-      title: "Graduates",
-    },
-    {
-      image: work,
-      title: "Working Professionals",
-    },
-  ]}
-/>
-
-
-
-
-
-<TopUniversities
-  title="Top Universities Offering Allied Health"
-  highlight="Science Programs"
-  subtitle="If you’re planning to pursue Allied Health Sciences abroad, here are some of the world’s top institutions offering high-quality education and practical training in this field:"
-  universities={universitiesList}
-/>
-
-
-
-<Testimonials/>
 
 <TopUni />
 
