@@ -30,159 +30,213 @@ const courses = [
   { title: "Creative Arts & Design", icon: <FaPalette /> },
 ];
 
-const TopUni = ({
-  universityList = universities,
-  courseList = courses,
-}) => {
+const TopUni = ({ universityList = universities, courseList = courses }) => {
   return (
-    <section
-      style={{
-        width: "100%",
-        background: "#EEF2FA",
-        padding: "58px 78px",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "1200px",
-          display: "grid",
-          gridTemplateColumns: "1.15fr 1fr",
-          gap: "90px",
-        }}
-      >
-        {/* Left */}
-        <div>
-          <h2
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "15px",
-              fontSize: "40px",
-              fontWeight: "800",
-              color: "#252525",
-              marginBottom: "24px",
-            }}
-          >
-            <FaUniversity
-              style={{
-                color: "#ff6b1a",
-                fontSize: "30px",
-              }}
-            />
+    <>
+      <style>
+        {`
+          .top-uni-section {
+            width: 100%;
+            background: #EEF2FA;
+            padding: 58px 78px;
+          }
 
-            Top
-            <span style={{ color: "#ff6b1a" }}>
-              Universities
-            </span>
-          </h2>
+          .top-uni-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.15fr 1fr;
+            gap: 90px;
+          }
 
-          <div style={{ width: "100%" }}>
-            {universityList.map((item, index) => (
-              <div
-                key={index}
-                style={{
-                  height: "60px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  borderBottom: "1px solid rgba(255,255,255,0.7)",
-                  paddingRight: "10px",
-                }}
-              >
-                <p
-                  style={{
-                    fontSize: "20px",
-                    fontWeight: "500",
-                    color: "#101827",
-                    margin: 0,
-                  }}
-                >
-                  {item}
-                </p>
+          .top-uni-heading {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 40px;
+            font-weight: 800;
+            color: #252525;
+            margin-bottom: 24px;
+            line-height: 1.2;
+          }
 
-                <FaRegStar
-                  style={{
-                    color: "#8ea1bd",
-                    fontSize: "18px",
-                  }}
-                />
-              </div>
-            ))}
+          .top-uni-heading svg {
+            color: #ff6b1a;
+            font-size: 30px;
+            flex-shrink: 0;
+          }
+
+          .orange-text {
+            color: #ff6b1a;
+          }
+
+          .uni-row {
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.7);
+            padding-right: 10px;
+            gap: 15px;
+          }
+
+          .uni-row p {
+            font-size: 20px;
+            font-weight: 500;
+            color: #101827;
+            margin: 0;
+          }
+
+          .uni-star {
+            color: #8ea1bd;
+            font-size: 18px;
+            flex-shrink: 0;
+          }
+
+          .course-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+          }
+
+          .course-card {
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #F7F9FD;
+            border-radius: 8px;
+            padding: 10px 11px;
+            box-shadow: 0 1px 4px rgba(0,0,0,.05);
+          }
+
+          .course-icon {
+            color: #ff6b1a;
+            font-size: 18px;
+            display: flex;
+          }
+
+          .course-title {
+            font-size: 11px;
+            color: #222;
+            font-weight: 500;
+            white-space: nowrap;
+          }
+
+          @media (max-width: 991px) {
+            .top-uni-section {
+              padding: 45px 35px;
+            }
+
+            .top-uni-container {
+              grid-template-columns: 1fr;
+              gap: 45px;
+            }
+
+            .top-uni-heading {
+              font-size: 34px;
+            }
+
+            .uni-row p {
+              font-size: 18px;
+            }
+          }
+
+          @media (max-width: 575px) {
+            .top-uni-section {
+              padding: 38px 18px;
+            }
+
+            .top-uni-container {
+              gap: 38px;
+            }
+
+            .top-uni-heading {
+              font-size: 27px;
+              gap: 10px;
+              margin-bottom: 18px;
+              flex-wrap: wrap;
+            }
+
+            .top-uni-heading svg {
+              font-size: 24px;
+            }
+
+            .uni-row {
+              height: auto;
+              min-height: 52px;
+              padding: 10px 4px 10px 0;
+            }
+
+            .uni-row p {
+              font-size: 15px;
+              line-height: 1.4;
+            }
+
+            .uni-star {
+              font-size: 15px;
+            }
+
+            .course-list {
+              gap: 12px;
+            }
+
+            .course-card {
+              width: 100%;
+              padding: 11px 12px;
+            }
+
+            .course-title {
+              font-size: 13px;
+              white-space: normal;
+            }
+
+            .course-icon {
+              font-size: 17px;
+              flex-shrink: 0;
+            }
+          }
+        `}
+      </style>
+
+      <section className="top-uni-section">
+        <div className="top-uni-container">
+          {/* Left */}
+          <div>
+            <h2 className="top-uni-heading">
+              <FaUniversity />
+              Top <span className="orange-text">Universities</span>
+            </h2>
+
+            <div style={{ width: "100%" }}>
+              {universityList.map((item, index) => (
+                <div key={index} className="uni-row">
+                  <p>{item}</p>
+                  <FaRegStar className="uni-star" />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right */}
+          <div>
+            <h2 className="top-uni-heading">
+              <FaBookOpen />
+              Popular <span className="orange-text">Courses</span>
+            </h2>
+
+            <div className="course-list">
+              {courseList.map((course, index) => (
+                <div key={index} className="course-card">
+                  <span className="course-icon">{course.icon}</span>
+                  <span className="course-title">{course.title}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-
-        {/* Right */}
-        <div>
-          <h2
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "18px",
-              fontSize: "40px",
-              fontWeight: "800",
-              color: "#252525",
-              marginBottom: "20px",
-            }}
-          >
-            <FaBookOpen
-              style={{
-                color: "#ff6b1a",
-                fontSize: "30px",
-              }}
-            />
-
-            Popular
-            <span style={{ color: "#ff6b1a" }}>
-              Courses
-            </span>
-          </h2>
-
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "15px",
-            }}
-          >
-            {courseList.map((course, index) => (
-              <div
-                key={index}
-                style={{
-                  width: "fit-content",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
-                  background: "#F7F9FD",
-                  borderRadius: "8px",
-                  padding: "10px 11px",
-                  boxShadow: "0 1px 4px rgba(0,0,0,.05)",
-                }}
-              >
-                <span
-                  style={{
-                    color: "#ff6b1a",
-                    fontSize: "18px",
-                  }}
-                >
-                  {course.icon}
-                </span>
-
-                <span
-                  style={{
-                    fontSize: "11px",
-                    color: "#222",
-                    fontWeight: "500",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  {course.title}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

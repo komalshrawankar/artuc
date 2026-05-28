@@ -25,210 +25,271 @@ const sectors = [
   "Education & Research",
 ];
 
-const WorkOpportunities = ({
-  intakeList = intakes,
-  sectorList = sectors,
-}) => {
+const WorkOpportunities = ({ intakeList = intakes, sectorList = sectors }) => {
   return (
-    <section
-      style={{
-        width: "100%",
-        background: "#0E1729",
-        padding: "48px 68px 44px",
-        boxSizing: "border-box",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "1200px",
-          display: "grid",
-          gridTemplateColumns: "1fr 1.15fr 1fr",
-          gap: "70px",
-          alignItems: "flex-start",
-        }}
-      >
-        {/* University Intakes */}
-        <div>
-          <div
-            style={{
-              width: "41px",
-              height: "41px",
-              background: "#ff7a1a",
-              borderRadius: "11px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              marginBottom: "16px",
-            }}
-          >
-            <FaCalendarAlt style={{ color: "#fff", fontSize: "18px" }} />
+    <>
+      <style>
+        {`
+          .work-opportunities-section {
+            width: 100%;
+            background: #0E1729;
+            padding: 48px 68px 44px;
+            box-sizing: border-box;
+          }
+
+          .work-opportunities-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1.15fr 1fr;
+            gap: 70px;
+            align-items: flex-start;
+          }
+
+          .work-icon-box {
+            width: 41px;
+            height: 41px;
+            background: #ff7a1a;
+            border-radius: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+          }
+
+          .work-icon-box svg {
+            color: #fff;
+            font-size: 18px;
+          }
+
+          .work-title {
+            color: #fff;
+            font-size: 25px;
+            font-weight: 800;
+            margin: 0 0 18px;
+            line-height: 1.2;
+          }
+
+          .intake-item {
+            margin-bottom: 18px;
+          }
+
+          .intake-item h4 {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
+          }
+
+          .intake-item p {
+            color: #fff;
+            font-size: 12px;
+            font-weight: 400;
+            margin: 1px 0 0;
+            line-height: 1.25;
+          }
+
+          .work-card {
+            width: 260px;
+            background: #1E2A3D;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 9px;
+            padding: 16px 16px 18px;
+            box-sizing: border-box;
+            margin-bottom: 13px;
+          }
+
+          .work-card h2 {
+            color: #ff7a1a;
+            font-size: 25px;
+            font-weight: 900;
+            margin: 0 0 5px;
+          }
+
+          .work-card p {
+            color: #d4d9e2;
+            font-size: 12px;
+            line-height: 1.45;
+            margin: 0;
+          }
+
+          .work-note {
+            color: #8994a8;
+            font-size: 10px;
+            line-height: 1.45;
+            margin: 0;
+            max-width: 230px;
+          }
+
+          .sector-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+          }
+
+          .sector-pill {
+            width: fit-content;
+            color: #fff;
+            font-size: 14px;
+            background: #1E2A3D;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 5px;
+            padding: 7px 12px;
+            white-space: nowrap;
+          }
+
+          @media (max-width: 991px) {
+            .work-opportunities-section {
+              padding: 45px 35px;
+            }
+
+            .work-opportunities-container {
+              grid-template-columns: 1fr 1fr;
+              gap: 45px;
+            }
+
+            .work-opportunities-container > div:nth-child(2) {
+              order: 3;
+            }
+
+            .work-card {
+              width: 100%;
+              max-width: 320px;
+            }
+          }
+
+          @media (max-width: 575px) {
+            .work-opportunities-section {
+              padding: 40px 18px;
+            }
+
+            .work-opportunities-container {
+              grid-template-columns: 1fr;
+              gap: 34px;
+            }
+
+            .work-opportunities-container > div:nth-child(2) {
+              order: initial;
+            }
+
+            .work-icon-box {
+              width: 38px;
+              height: 38px;
+              border-radius: 10px;
+              margin-bottom: 14px;
+            }
+
+            .work-title {
+              font-size: 22px;
+              margin-bottom: 16px;
+            }
+
+            .intake-item {
+              margin-bottom: 15px;
+            }
+
+            .intake-item h4 {
+              font-size: 16px;
+            }
+
+            .intake-item p {
+              font-size: 12px;
+              line-height: 1.4;
+            }
+
+            .work-card {
+              width: 100%;
+              max-width: 100%;
+              padding: 15px;
+            }
+
+            .work-card h2 {
+              font-size: 24px;
+            }
+
+            .work-card p {
+              font-size: 12px;
+            }
+
+            .work-note {
+              max-width: 100%;
+              font-size: 11px;
+            }
+
+            .sector-list {
+              gap: 9px;
+            }
+
+            .sector-pill {
+              width: 100%;
+              font-size: 13px;
+              padding: 8px 12px;
+              white-space: normal;
+            }
+          }
+        `}
+      </style>
+
+      <section className="work-opportunities-section">
+        <div className="work-opportunities-container">
+          {/* University Intakes */}
+          <div>
+            <div className="work-icon-box">
+              <FaCalendarAlt />
+            </div>
+
+            <h3 className="work-title">University Intakes</h3>
+
+            {intakeList.map((item, index) => (
+              <div key={index} className="intake-item">
+                <h4>{item.title}</h4>
+                <p>{item.desc}</p>
+              </div>
+            ))}
           </div>
 
-          <h3
-            style={{
-              color: "#fff",
-              fontSize: "25px",
-              fontWeight: "800",
-              margin: "0 0 18px",
-            }}
-          >
-            University Intakes
-          </h3>
+          {/* Work Opportunities */}
+          <div>
+            <div className="work-icon-box">
+              <FaStopwatch />
+            </div>
 
-          {intakeList.map((item, index) => (
-            <div key={index} style={{ marginBottom: "18px" }}>
-              <h4
-                style={{
-                  color: "#fff",
-                  fontSize: "18px",
-                  fontWeight: "600",
-                  margin: 0,
-                }}
-              >
-                {item.title}
-              </h4>
-              <p
-                style={{
-                  color: "#fff",
-                  fontSize: "12px",
-                  fontWeight: "400",
-                  margin: "1px 0 0",
-                  lineHeight: "1.25",
-                }}
-              >
-                {item.desc}
+            <h3 className="work-title">Work Opportunities</h3>
+
+            <div className="work-card">
+              <h2>48h</h2>
+
+              <p>
+                International students can work up to 48 hours per fortnight
+                during sessions.
               </p>
             </div>
-          ))}
-        </div>
 
-        {/* Work Opportunities */}
-        <div>
-          <div
-            style={{
-              width: "41px",
-              height: "41px",
-              background: "#ff7a1a",
-              borderRadius: "11px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              marginBottom: "16px",
-            }}
-          >
-            <FaStopwatch style={{ color: "#fff", fontSize: "19px" }} />
-          </div>
-
-          <h3
-            style={{
-              color: "#fff",
-              fontSize: "25px",
-              fontWeight: "800",
-              margin: "0 0 18px",
-            }}
-          >
-            Work Opportunities
-          </h3>
-
-          <div
-            style={{
-              width: "260px",
-              background: "#1E2A3D",
-              border: "1px solid rgba(255,255,255,0.08)",
-              borderRadius: "9px",
-              padding: "16px 16px 18px",
-              boxSizing: "border-box",
-              marginBottom: "13px",
-            }}
-          >
-            <h2
-              style={{
-                color: "#ff7a1a",
-                fontSize: "25px",
-                fontWeight: "900",
-                margin: "0 0 5px",
-              }}
-            >
-              48h
-            </h2>
-
-            <p
-              style={{
-                color: "#d4d9e2",
-                fontSize: "12px",
-                lineHeight: "1.45",
-                margin: 0,
-              }}
-            >
-              International students can work up to 48 hours per fortnight
-              during sessions.
+            <p className="work-note">
+              Full-time work is allowed during scheduled semester breaks and
+              holidays.
             </p>
           </div>
 
-          <p
-            style={{
-              color: "#8994a8",
-              fontSize: "10px",
-              lineHeight: "1.45",
-              margin: 0,
-              maxWidth: "230px",
-            }}
-          >
-            Full-time work is allowed during scheduled semester breaks and
-            holidays.
-          </p>
-        </div>
+          {/* Career Sectors */}
+          <div>
+            <div className="work-icon-box">
+              <FaRocket />
+            </div>
 
-        {/* Career Sectors */}
-        <div>
-          <div
-            style={{
-              width: "41px",
-              height: "41px",
-              background: "#ff7a1a",
-              borderRadius: "11px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              marginBottom: "16px",
-            }}
-          >
-            <FaRocket style={{ color: "#fff", fontSize: "18px" }} />
-          </div>
+            <h3 className="work-title">Career Sectors</h3>
 
-          <h3
-            style={{
-              color: "#fff",
-              fontSize: "25px",
-              fontWeight: "800",
-              margin: "0 0 18px",
-            }}
-          >
-            Career Sectors
-          </h3>
-
-          <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-            {sectorList.map((sector, index) => (
-              <span
-                key={index}
-                style={{
-                  width: "fit-content",
-                  color: "#fff",
-                  fontSize: "14px",
-                  background: "#1E2A3D",
-                  border: "1px solid rgba(255,255,255,0.08)",
-                  borderRadius: "5px",
-                  padding: "7px 12px",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                {sector}
-              </span>
-            ))}
+            <div className="sector-list">
+              {sectorList.map((sector, index) => (
+                <span key={index} className="sector-pill">
+                  {sector}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
