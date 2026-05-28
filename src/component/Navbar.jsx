@@ -70,6 +70,13 @@ const Navbar = () => {
     ["🇻🇳", "Vietnam"],
   ];
 
+  const makeSlug = (text) =>
+    text
+      .toLowerCase()
+      .replace(/,/g, "")
+      .replace(/&/g, "and")
+      .replace(/\s+/g, "-");
+
   return (
     <>
       <style>
@@ -78,42 +85,122 @@ const Navbar = () => {
             color: #ff7a1a !important;
           }
 
+          .artuc-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            min-height: 74px;
+            border-bottom: 1px solid #eee;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            z-index: 999999;
+          }
+
+          .custom-mega-menu {
+            position: absolute;
+            top: 74px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 86%;
+            background: #f5f6f8;
+            border-top: 3px solid #ff7a1a;
+            padding: 28px 34px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+            z-index: 99999;
+          }
+
           @media (max-width: 991px) {
+            .artuc-navbar {
+              max-height: 100vh;
+              overflow-y: auto;
+              overflow-x: hidden;
+            }
+
             .custom-mega-menu {
               position: static !important;
               transform: none !important;
               width: 100% !important;
+              max-height: none !important;
+              height: auto !important;
+              overflow: visible !important;
               box-shadow: none !important;
-              padding: 20px !important;
-              margin-top: 10px;
+              padding: 18px 22px !important;
+              margin-top: 8px;
+              border-top: 2px solid #ff7a1a;
+            }
+
+            .navbar-collapse {
+              max-height: none !important;
+              height: auto !important;
+              overflow: visible !important;
             }
 
             .navbar-nav {
               align-items: flex-start !important;
+              width: 100%;
             }
 
             .nav-link {
               padding-left: 0 !important;
+              padding-top: 10px !important;
+              padding-bottom: 10px !important;
+            }
+
+            .mobile-mega-row {
+              row-gap: 6px;
+            }
+
+            .custom-mega-menu hr {
+              margin: 18px 0;
+            }
+
+            .custom-mega-menu h5 {
+              font-size: 17px !important;
+              margin-bottom: 14px !important;
+            }
+
+            .custom-mega-menu .mega-menu-link {
+              font-size: 15px !important;
+              line-height: 1.45 !important;
+              white-space: normal !important;
+            }
+
+            .custom-mega-menu .country-link {
+              font-size: 15px !important;
+            }
+          }
+
+          @media (max-width: 575px) {
+            .artuc-navbar .container-fluid {
+              padding-left: 22px !important;
+              padding-right: 22px !important;
+            }
+
+            .custom-mega-menu {
+              padding: 16px 18px !important;
+            }
+
+            .custom-mega-menu .col-12,
+            .custom-mega-menu .col-6 {
+              margin-bottom: 12px !important;
+            }
+
+            .apply-now-wrap {
+              padding-bottom: 18px !important;
             }
           }
         `}
       </style>
 
       <nav
-  className="navbar navbar-expand-lg navbar-light py-0"
-  style={{
-    position: "fixed",
-    top: "0",
-    left: "0",
-    width: "100%",
-    backgroundColor: "#fff",
-    minHeight: "74px",
-    borderBottom: "1px solid #eee",
-    boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
-    zIndex: "999999",
-  }}
-  onMouseLeave={() => setOpenDropdown(null)}
->
+        className="navbar navbar-expand-lg navbar-light py-0 artuc-navbar"
+        onMouseLeave={() => {
+          if (window.innerWidth >= 992) {
+            setOpenDropdown(null);
+          }
+        }}
+      >
         <div
           className="container-fluid"
           style={{
@@ -169,41 +256,55 @@ const Navbar = () => {
 
               <li
                 className="nav-item"
-                onMouseEnter={() => setOpenDropdown("courses")}
+                onMouseEnter={() => {
+                  if (window.innerWidth >= 992) {
+                    setOpenDropdown("courses");
+                  }
+                }}
               >
                 <a
                   href="#"
                   className="nav-link"
                   style={isCourseActive ? activeLinkStyle : linkStyle}
                   onClick={(e) => {
+                    e.preventDefault();
                     if (window.innerWidth < 992) {
-                      e.preventDefault();
                       setOpenDropdown(
                         openDropdown === "courses" ? null : "courses"
                       );
                     }
                   }}
                 >
-                  Courses <span style={{ marginLeft: "6px", fontSize: "14px" }}>v</span>
+                  Courses{" "}
+                  <span style={{ marginLeft: "6px", fontSize: "14px" }}>
+                    v
+                  </span>
                 </a>
               </li>
 
               <li
                 className="nav-item"
-                onMouseEnter={() => setOpenDropdown("study")}
+                onMouseEnter={() => {
+                  if (window.innerWidth >= 992) {
+                    setOpenDropdown("study");
+                  }
+                }}
               >
                 <a
                   href="#"
                   className="nav-link"
                   style={isStudyActive ? activeLinkStyle : linkStyle}
                   onClick={(e) => {
+                    e.preventDefault();
                     if (window.innerWidth < 992) {
-                      e.preventDefault();
                       setOpenDropdown(openDropdown === "study" ? null : "study");
                     }
                   }}
                 >
-                  Study Abroad <span style={{ marginLeft: "6px", fontSize: "14px" }}>v</span>
+                  Study Abroad{" "}
+                  <span style={{ marginLeft: "6px", fontSize: "14px" }}>
+                    v
+                  </span>
                 </a>
               </li>
 
@@ -228,7 +329,7 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <div className="d-flex justify-content-lg-end justify-content-start pb-3 pb-lg-0">
+            <div className="d-flex justify-content-lg-end justify-content-start pb-3 pb-lg-0 apply-now-wrap">
               <a href="/contact" style={applyBtnStyle}>
                 Apply Now
               </a>
@@ -239,12 +340,15 @@ const Navbar = () => {
         {openDropdown === "courses" && (
           <div
             className="custom-mega-menu"
-            style={megaMenuStyle}
-            onMouseEnter={() => setOpenDropdown("courses")}
+            onMouseEnter={() => {
+              if (window.innerWidth >= 992) {
+                setOpenDropdown("courses");
+              }
+            }}
           >
             <h5 style={megaHeading}>Testprep</h5>
 
-            <div className="row mb-3">
+            <div className="row mb-3 mobile-mega-row">
               {testPrep.map((item, i) => (
                 <div className="col-6 col-md-2 mb-2" key={i}>
                   <a
@@ -262,15 +366,11 @@ const Navbar = () => {
 
             <h5 style={megaHeading}>Courses</h5>
 
-            <div className="row">
+            <div className="row mobile-mega-row">
               {courses.map((item, i) => (
                 <div className="col-12 col-md-4 mb-3" key={i}>
                   <a
-                    href={`/courses/${item
-                      .toLowerCase()
-                      .replace(/,/g, "")
-                      .replace(/&/g, "and")
-                      .replace(/\s+/g, "-")}`}
+                    href={`/courses/${makeSlug(item)}`}
                     className="mega-menu-link"
                     style={megaLink}
                   >
@@ -284,52 +384,53 @@ const Navbar = () => {
 
             <h5 style={megaHeading}>Admission Services</h5>
 
-            <div className="row">
-  {services.map((item, i) => (
-    <div className="col-12 col-md-4 mb-3" key={i}>
-      <a
-        href={`/courses/admission-services/${item
-          .toLowerCase()
-          .replace(/&/g, "and")
-          .replace(/\s+/g, "-")}`}
-        className="mega-menu-link"
-        style={megaLink}
-      >
-        {item}
-      </a>
-    </div>
-  ))}
-</div>
+            <div className="row mobile-mega-row">
+              {services.map((item, i) => (
+                <div className="col-12 col-md-4 mb-3" key={i}>
+                  <a
+                    href={`/courses/admission-services/${makeSlug(item)}`}
+                    className="mega-menu-link"
+                    style={megaLink}
+                  >
+                    {item}
+                  </a>
+                </div>
+              ))}
+            </div>
           </div>
         )}
 
-      {openDropdown === "study" && (
-  <div
-    className="custom-mega-menu"
-    style={megaMenuStyle}
-    onMouseEnter={() => setOpenDropdown("study")}
-  >
-    <div className="row">
-      {countries.map((country, i) => (
-        <div className="col-6 col-md-3 mb-4" key={i}>
-          <a
-            href={`/study-abroad/${country[1]
-              .toLowerCase()
-              .replace(/\s+/g, "-")}`}
-            className="mega-menu-link"
-            style={countryLink}
+        {openDropdown === "study" && (
+          <div
+            className="custom-mega-menu"
+            onMouseEnter={() => {
+              if (window.innerWidth >= 992) {
+                setOpenDropdown("study");
+              }
+            }}
           >
-            <span style={{ fontSize: "24px", marginRight: "14px" }}>
-              {country[0]}
-            </span>
-            {country[1]}
-          </a>
-        </div>
-      ))}
-    </div>
-  </div>
-)}
+            <div className="row mobile-mega-row">
+              {countries.map((country, i) => (
+                <div className="col-6 col-md-3 mb-4" key={i}>
+                  <a
+                    href={`/study-abroad/${country[1]
+                      .toLowerCase()
+                      .replace(/\s+/g, "-")}`}
+                    className="mega-menu-link country-link"
+                    style={countryLink}
+                  >
+                    <span style={{ fontSize: "24px", marginRight: "14px" }}>
+                      {country[0]}
+                    </span>
+                    {country[1]}
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </nav>
+
       <div style={{ height: "74px" }}></div>
     </>
   );
@@ -358,19 +459,6 @@ const applyBtnStyle = {
   border: "none",
   textDecoration: "none",
   display: "inline-block",
-};
-
-const megaMenuStyle = {
-  position: "absolute",
-  top: "74px",
-  left: "50%",
-  transform: "translateX(-50%)",
-  width: "86%",
-  background: "#f5f6f8",
-  borderTop: "3px solid #ff7a1a",
-  padding: "28px 34px",
-  boxShadow: "0 8px 20px rgba(0,0,0,0.12)",
-  zIndex: 99999,
 };
 
 const megaHeading = {

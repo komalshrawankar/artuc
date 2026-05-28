@@ -7,7 +7,7 @@ const CTASection = ({
   afterTitle = "",
   description,
   buttonText,
-  buttonLink = "#",
+  buttonLink = "/contact",
 }) => {
   return (
     <section
